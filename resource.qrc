@@ -1,0 +1,24 @@
+<RCC>
+  <qresource>
+    <file>images/menu_icon_blue.svg</file>
+    <file>images/menu_icon_blue_inverted.svg</file>
+    <file>images/logo_white.svg</file>
+    <file>images/coopbankoromia.svg</file>
+    <file>images/logo_black.svg</file>
+    <file>images/logo.svg</file>
+    <file>images/about_icon_blue.svg</file>
+    <file>images/about_icon_light.svg</file>
+    <file>images/apps_icon_blue.svg</file>
+    <file>images/apps_icon_light.svg</file>
+    <file>images/home_icon_blue.svg</file>
+    <file>images/home_icon_light.svg</file>
+    <file>images/logo_big.svg</file>
+    <file>images/logo_small.svg</file>
+    <file>images/logout_icon_blue.svg</file>
+    <file>images/logout_icon_light.svg</file>
+    <file>images/menu_icon.svg</file>
+    <file>images/menu_icon_inverted.svg</file>
+    <file>images/update_icon_blue.svg</file>
+    <file>images/update_icon_light.svg</file>
+  </qresource>
+</RCC>
