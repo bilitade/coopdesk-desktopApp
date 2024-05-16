@@ -3,8 +3,6 @@
     <file>images/menu_icon_blue.svg</file>
     <file>images/menu_icon_blue_inverted.svg</file>
     <file>images/logo_white.svg</file>
-    <file>images/coopbankoromia.svg</file>
-    <file>images/logo_black.svg</file>
     <file>images/logo.svg</file>
     <file>images/about_icon_blue.svg</file>
     <file>images/about_icon_light.svg</file>
@@ -20,5 +18,19 @@
     <file>images/menu_icon_inverted.svg</file>
     <file>images/update_icon_blue.svg</file>
     <file>images/update_icon_light.svg</file>
+  </qresource>
+  <qresource>
+    <file>homeicons/about_coop.png</file>
+    <file>homeicons/alhuda.png</file>
+    <file>homeicons/atm.png</file>
+    <file>homeicons/conventinal_products.png</file>
+    <file>homeicons/coopapp.png</file>
+    <file>homeicons/coopay.png</file>
+    <file>homeicons/coopurl.png</file>
+    <file>homeicons/michu.png</file>
+    <file>homeicons/pcinfo.png</file>
+    <file>homeicons/phonebook.png</file>
+    <file>homeicons/remittance.png</file>
+    <file>homeicons/teller.png</file>
   </qresource>
 </RCC>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1033</width>
-    <height>648</height>
+    <width>1199</width>
+    <height>735</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -35,6 +35,469 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2">
+     <widget class="QWidget" name="main_menu" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>15</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="pushButton_19">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+border:none;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/images/menu_icon_blue.svg</normaloff>
+             <normalon>:/images/menu_icon_blue_inverted.svg</normalon>:/images/menu_icon_blue.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>24</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>668</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="font">
+          <font>
+           <family>Roboto</family>
+           <pointsize>12</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="home_page">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+  background:none;
+  border: none;
+
+
+}</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0,0" columnstretch="0,0,0">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="horizontalSpacing">
+            <number>20</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>5</number>
+           </property>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/teller.png</normaloff>:/homeicons/teller.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/about_coop.png</normaloff>:/homeicons/about_coop.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/alhuda.png</normaloff>:/homeicons/alhuda.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/phonebook.png</normaloff>:/homeicons/phonebook.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/coopurl.png</normaloff>:/homeicons/coopurl.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/michu.png</normaloff>:/homeicons/michu.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/coopay.png</normaloff>:/homeicons/coopay.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/conventinal_products.png</normaloff>:/homeicons/conventinal_products.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/coopapp.png</normaloff>:/homeicons/coopapp.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/remittance.png</normaloff>:/homeicons/remittance.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/atm.png</normaloff>:/homeicons/atm.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pcinfo_button">
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PC Information&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="resource.qrc">
+               <normaloff>:/homeicons/pcinfo.png</normaloff>:/homeicons/pcinfo.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>128</width>
+               <height>128</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="about_page">
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>65</y>
+             <width>301</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>About PAGE </string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="update_page">
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>170</y>
+             <width>221</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>update page </string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="pc_info_page">
+          <widget class="QWidget" name="widget" native="true">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>291</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>30</y>
+              <width>181</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Network Information</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>20</y>
+             <width>301</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>30</y>
+              <width>171</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>System</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="widget_3" native="true">
+           <property name="geometry">
+            <rect>
+             <x>650</x>
+             <y>20</y>
+             <width>301</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>30</y>
+              <width>171</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Ram Usage</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="widget_4" native="true">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>260</y>
+             <width>301</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>30</y>
+              <width>171</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Disk Usage</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="apps_page">
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>110</y>
+             <width>161</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Apps Page</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
     <item row="0" column="0">
      <widget class="QWidget" name="icon_only_widget" native="true">
       <property name="sizePolicy">
@@ -512,138 +975,6 @@ font-weight:bold;
           </widget>
          </item>
         </layout>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QWidget" name="main_menu" native="true">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>15</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_5">
-         <item>
-          <widget class="QPushButton" name="pushButton_19">
-           <property name="styleSheet">
-            <string notr="true">QPushButton{
-border:none;
-}</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset resource="resource.qrc">
-             <normaloff>:/images/menu_icon_blue.svg</normaloff>
-             <normalon>:/images/menu_icon_blue_inverted.svg</normalon>:/images/menu_icon_blue.svg</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>24</width>
-             <height>24</height>
-            </size>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Orientation::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>668</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QStackedWidget" name="stackedWidget">
-         <property name="font">
-          <font>
-           <family>Roboto</family>
-           <pointsize>12</pointsize>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="currentIndex">
-          <number>3</number>
-         </property>
-         <widget class="QWidget" name="home_page">
-          <widget class="QLabel" name="label_5">
-           <property name="geometry">
-            <rect>
-             <x>280</x>
-             <y>150</y>
-             <width>181</width>
-             <height>16</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Home_page</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="about_page">
-          <widget class="QLabel" name="label_3">
-           <property name="geometry">
-            <rect>
-             <x>300</x>
-             <y>160</y>
-             <width>171</width>
-             <height>16</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>About PAGE </string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="update_page">
-          <widget class="QLabel" name="label_6">
-           <property name="geometry">
-            <rect>
-             <x>240</x>
-             <y>170</y>
-             <width>221</width>
-             <height>101</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>update page </string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QWidget" name="apps_page">
-          <widget class="QLabel" name="label_4">
-           <property name="geometry">
-            <rect>
-             <x>240</x>
-             <y>110</y>
-             <width>161</width>
-             <height>111</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>Apps Page</string>
-           </property>
-          </widget>
-         </widget>
-        </widget>
        </item>
       </layout>
      </widget>
