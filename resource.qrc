@@ -20,6 +20,11 @@
     <file>images/update_icon_light.svg</file>
   </qresource>
   <qresource>
+    <file>perfomance_icons/cpu_icon.png</file>
+    <file>perfomance_icons/ram_icon.png</file>
+    <file>perfomance_icons/ssd_icon.png</file>
+  </qresource>
+  <qresource>
     <file>homeicons/about_coop.png</file>
     <file>homeicons/alhuda.png</file>
     <file>homeicons/atm.png</file>
