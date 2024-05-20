@@ -38,4 +38,7 @@
     <file>homeicons/remittance.png</file>
     <file>homeicons/teller.png</file>
   </qresource>
+  <qresource>
+    <file>logo.png</file>
+  </qresource>
 </RCC>

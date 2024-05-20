@@ -9878,3 +9878,16834 @@ class Ui_MainWindow(object):
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
     # retranslateUi
 
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1172, 735)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton{\n"
+"background-color: rgb(8, 176, 240);\n"
+"border:none;\n"
+"color:white ;\n"
+"\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.horizontalSpacer_2 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 2, 1, 1, 2)
+
+        self.display = QFrame(self.pc_info_page)
+        self.display.setObjectName(u"display")
+        self.display.setFrameShape(QFrame.Shape.StyledPanel)
+        self.display.setFrameShadow(QFrame.Shadow.Raised)
+        self.label_42 = QLabel(self.display)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setGeometry(QRect(80, 10, 121, 16))
+        self.label_43 = QLabel(self.display)
+        self.label_43.setObjectName(u"label_43")
+        self.label_43.setGeometry(QRect(30, 60, 61, 16))
+        self.label_44 = QLabel(self.display)
+        self.label_44.setObjectName(u"label_44")
+        self.label_44.setGeometry(QRect(40, 80, 61, 16))
+        self.label_45 = QLabel(self.display)
+        self.label_45.setObjectName(u"label_45")
+        self.label_45.setGeometry(QRect(130, 60, 81, 20))
+        self.label_46 = QLabel(self.display)
+        self.label_46.setObjectName(u"label_46")
+        self.label_46.setGeometry(QRect(40, 100, 41, 16))
+        self.label_47 = QLabel(self.display)
+        self.label_47.setObjectName(u"label_47")
+        self.label_47.setGeometry(QRect(130, 80, 91, 16))
+        self.label_48 = QLabel(self.display)
+        self.label_48.setObjectName(u"label_48")
+        self.label_48.setGeometry(QRect(30, 40, 101, 16))
+        self.label_49 = QLabel(self.display)
+        self.label_49.setObjectName(u"label_49")
+        self.label_49.setGeometry(QRect(130, 40, 91, 16))
+        self.label_50 = QLabel(self.display)
+        self.label_50.setObjectName(u"label_50")
+        self.label_50.setGeometry(QRect(130, 100, 91, 16))
+
+        self.gridLayout_3.addWidget(self.display, 1, 2, 1, 2)
+
+        self.frame_3 = QFrame(self.pc_info_page)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.label_15 = QLabel(self.frame_3)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setGeometry(QRect(80, 10, 121, 16))
+        self.label_16 = QLabel(self.frame_3)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setGeometry(QRect(40, 70, 61, 16))
+        self.label_18 = QLabel(self.frame_3)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(40, 90, 61, 16))
+        self.label_19 = QLabel(self.frame_3)
+        self.label_19.setObjectName(u"label_19")
+        self.label_19.setGeometry(QRect(110, 70, 81, 20))
+        self.label_20 = QLabel(self.frame_3)
+        self.label_20.setObjectName(u"label_20")
+        self.label_20.setGeometry(QRect(40, 110, 41, 16))
+        self.label_21 = QLabel(self.frame_3)
+        self.label_21.setObjectName(u"label_21")
+        self.label_21.setGeometry(QRect(110, 90, 91, 16))
+        self.label_22 = QLabel(self.frame_3)
+        self.label_22.setObjectName(u"label_22")
+        self.label_22.setGeometry(QRect(40, 50, 61, 16))
+        self.label_23 = QLabel(self.frame_3)
+        self.label_23.setObjectName(u"label_23")
+        self.label_23.setGeometry(QRect(110, 50, 91, 16))
+        self.label_33 = QLabel(self.frame_3)
+        self.label_33.setObjectName(u"label_33")
+        self.label_33.setGeometry(QRect(110, 110, 91, 16))
+
+        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 2)
+
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton{\n"
+"\n"
+"border:none\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 3, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton{\n"
+"\n"
+"border:none\n"
+"}")
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 6, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_3, 2, 4, 1, 2)
+
+        self.pefromance = QFrame(self.pc_info_page)
+        self.pefromance.setObjectName(u"pefromance")
+        self.pefromance.setFrameShape(QFrame.Shape.StyledPanel)
+        self.pefromance.setFrameShadow(QFrame.Shadow.Raised)
+        self.pefromance.setLineWidth(2)
+        self.label_60 = QLabel(self.pefromance)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setGeometry(QRect(140, 30, 151, 16))
+        self.widget = QWidget(self.pefromance)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(53, 51, 281, 221))
+        self.gridLayout_4 = QGridLayout(self.widget)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.label_66 = QLabel(self.widget)
+        self.label_66.setObjectName(u"label_66")
+        self.label_66.setMinimumSize(QSize(32, 32))
+        self.label_66.setMaximumSize(QSize(64, 64))
+        self.label_66.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_66.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_66, 0, 0, 1, 1)
+
+        self.label_63 = QLabel(self.widget)
+        self.label_63.setObjectName(u"label_63")
+        self.label_63.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_63, 1, 1, 1, 1)
+
+        self.frame_6 = QFrame(self.widget)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setMinimumSize(QSize(24, 24))
+        self.frame_6.setMaximumSize(QSize(24, 24))
+        self.frame_6.setStyleSheet(u"background-color:rgb(255, 85, 0)")
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_6, 0, 2, 1, 1)
+
+        self.label_65 = QLabel(self.widget)
+        self.label_65.setObjectName(u"label_65")
+        self.label_65.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_65, 2, 1, 1, 1)
+
+        self.label_62 = QLabel(self.widget)
+        self.label_62.setObjectName(u"label_62")
+        self.label_62.setMinimumSize(QSize(32, 32))
+        self.label_62.setMaximumSize(QSize(64, 64))
+        self.label_62.setPixmap(QPixmap(u":/perfomance_icons/ssd_cion.png"))
+        self.label_62.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_62, 2, 0, 1, 1)
+
+        self.label_67 = QLabel(self.widget)
+        self.label_67.setObjectName(u"label_67")
+        self.label_67.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_67, 0, 1, 1, 1)
+
+        self.frame_8 = QFrame(self.widget)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setMinimumSize(QSize(24, 24))
+        self.frame_8.setMaximumSize(QSize(24, 24))
+        self.frame_8.setStyleSheet(u"background-color: rgb(255, 170, 0);")
+        self.frame_8.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_8, 2, 2, 1, 1)
+
+        self.frame_7 = QFrame(self.widget)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setMinimumSize(QSize(24, 24))
+        self.frame_7.setMaximumSize(QSize(24, 24))
+        self.frame_7.setStyleSheet(u"background-color:rgb(0, 255, 0)")
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_7, 1, 2, 1, 1)
+
+        self.label_61 = QLabel(self.widget)
+        self.label_61.setObjectName(u"label_61")
+        self.label_61.setMinimumSize(QSize(32, 32))
+        self.label_61.setMaximumSize(QSize(64, 64))
+        self.label_61.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_61.setScaledContents(True)
+        self.label_61.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_61, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.pefromance, 1, 4, 1, 3)
+
+        self.frame_2 = QFrame(self.pc_info_page)
+        self.frame_2.setObjectName(u"frame_2")
+        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
+        self.label_24 = QLabel(self.frame_2)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setGeometry(QRect(240, 30, 121, 16))
+        self.widget1 = QWidget(self.frame_2)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(70, 50, 401, 201))
+        self.gridLayout_5 = QGridLayout(self.widget1)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.label_36 = QLabel(self.widget1)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_5.addWidget(self.label_36, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.widget1)
+        self.label_31.setObjectName(u"label_31")
+
+        self.gridLayout_5.addWidget(self.label_31, 0, 0, 1, 1)
+
+        self.label_25 = QLabel(self.widget1)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_5.addWidget(self.label_25, 1, 0, 1, 1)
+
+        self.label_26 = QLabel(self.widget1)
+        self.label_26.setObjectName(u"label_26")
+
+        self.gridLayout_5.addWidget(self.label_26, 1, 1, 1, 1)
+
+        self.label_35 = QLabel(self.widget1)
+        self.label_35.setObjectName(u"label_35")
+
+        self.gridLayout_5.addWidget(self.label_35, 5, 0, 1, 1)
+
+        self.label_27 = QLabel(self.widget1)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 2, 0, 1, 1)
+
+        self.label_17 = QLabel(self.widget1)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_5.addWidget(self.label_17, 4, 0, 1, 1)
+
+        self.label_29 = QLabel(self.widget1)
+        self.label_29.setObjectName(u"label_29")
+
+        self.gridLayout_5.addWidget(self.label_29, 3, 0, 1, 1)
+
+        self.label_34 = QLabel(self.widget1)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_5.addWidget(self.label_34, 4, 1, 1, 1)
+
+        self.label_32 = QLabel(self.widget1)
+        self.label_32.setObjectName(u"label_32")
+
+        self.gridLayout_5.addWidget(self.label_32, 0, 1, 1, 1)
+
+        self.label_28 = QLabel(self.widget1)
+        self.label_28.setObjectName(u"label_28")
+
+        self.gridLayout_5.addWidget(self.label_28, 2, 1, 1, 1)
+
+        self.label_30 = QLabel(self.widget1)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_5.addWidget(self.label_30, 3, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame_2, 0, 3, 1, 4)
+
+        self.frame = QFrame(self.pc_info_page)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.label_5 = QLabel(self.frame)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(150, 10, 121, 16))
+        self.label_54 = QLabel(self.frame)
+        self.label_54.setObjectName(u"label_54")
+        self.label_54.setGeometry(QRect(70, 240, 291, 16))
+        self.widget2 = QWidget(self.frame)
+        self.widget2.setObjectName(u"widget2")
+        self.widget2.setGeometry(QRect(70, 40, 261, 181))
+        self.gridLayout_6 = QGridLayout(self.widget2)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.label_13 = QLabel(self.widget2)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 0, 0, 1, 1)
+
+        self.label_14 = QLabel(self.widget2)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 0, 1, 1, 1)
+
+        self.label_7 = QLabel(self.widget2)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 1, 0, 1, 1)
+
+        self.label_8 = QLabel(self.widget2)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 1, 1, 1, 1)
+
+        self.label_9 = QLabel(self.widget2)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 2, 0, 1, 1)
+
+        self.label_10 = QLabel(self.widget2)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 2, 1, 1, 1)
+
+        self.label_11 = QLabel(self.widget2)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 3, 0, 1, 1)
+
+        self.label_12 = QLabel(self.widget2)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 3, 1, 1, 1)
+
+        self.label_37 = QLabel(self.widget2)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 4, 0, 1, 1)
+
+        self.label_38 = QLabel(self.widget2)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 4, 1, 1, 1)
+
+        self.label_39 = QLabel(self.widget2)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 5, 0, 1, 1)
+
+        self.label_40 = QLabel(self.widget2)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 5, 1, 1, 1)
+
+        self.label_41 = QLabel(self.widget2)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 6, 0, 1, 1)
+
+        self.label_51 = QLabel(self.widget2)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 6, 1, 1, 1)
+
+        self.label_52 = QLabel(self.widget2)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.widget2)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 7, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame, 0, 0, 1, 3)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Bit/pixel", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"2k", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Vendor ", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"30bit/pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Adapte Type", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel Iris Graphics ", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Storage ", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Used", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Total", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"300GB", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Vendor ", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"500GB", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"221GB", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_60.setText(QCoreApplication.translate("MainWindow", u"Performance (Usage %)", None))
+        self.label_66.setText("")
+        self.label_63.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_65.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_62.setText("")
+        self.label_67.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_61.setText("")
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Professional", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor :", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"System Type :", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"64-bit operating system, x64-based processor", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Edition:", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Installed RAM : ", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"CPU cores:", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Platform :", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"8 Cores (Logical Processors)", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz   3.19 GHz", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"8GB", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Windows 11, Version 23H2", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_54.setText(QCoreApplication.translate("MainWindow", u"Seems you PC is not connected to Wired LAN!", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1610, 973)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"color: #00AEEF;\n"
+"text-size: 13px bold;")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 3, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 6, 1, 1)
+
+        self.display = QFrame(self.pc_info_page)
+        self.display.setObjectName(u"display")
+        self.display.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.display.setFrameShape(QFrame.Shape.StyledPanel)
+        self.display.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget = QWidget(self.display)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(20, 20, 321, 241))
+        self.gridLayout_9 = QGridLayout(self.widget)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.label_48 = QLabel(self.widget)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_50 = QLabel(self.widget)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_96 = QLabel(self.widget)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_94 = QLabel(self.widget)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_43 = QLabel(self.widget)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_49 = QLabel(self.widget)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_45 = QLabel(self.widget)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.widget)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_99 = QLabel(self.widget)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_44 = QLabel(self.widget)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_98 = QLabel(self.widget)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_97 = QLabel(self.widget)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.widget)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_46 = QLabel(self.widget)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+        self.label_42 = QLabel(self.widget)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font4)
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.display, 1, 2, 1, 2)
+
+        self.frame = QFrame(self.pc_info_page)
+        self.frame.setObjectName(u"frame")
+        self.frame.setStyleSheet(u"QFrame {\n"
+"  \n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget = QWidget(self.frame)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 20, 281, 246))
+        self.gridLayout_6 = QGridLayout(self.layoutWidget)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.label_8 = QLabel(self.layoutWidget)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.layoutWidget)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.layoutWidget)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.layoutWidget)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.layoutWidget)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.layoutWidget)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.layoutWidget)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.layoutWidget)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.layoutWidget)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.layoutWidget)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.layoutWidget)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.layoutWidget)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.layoutWidget)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.layoutWidget)
+        self.label_93.setObjectName(u"label_93")
+        font5 = QFont()
+        font5.setFamilies([u"Arial"])
+        font5.setPointSize(14)
+        font5.setBold(True)
+        self.label_93.setFont(font5)
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.layoutWidget)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.layoutWidget)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.layoutWidget)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.layoutWidget)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.layoutWidget)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+        self.layoutWidget_2 = QWidget(self.frame)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(330, 20, 311, 276))
+        self.gridLayout_8 = QGridLayout(self.layoutWidget_2)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.label_88 = QLabel(self.layoutWidget_2)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.layoutWidget_2)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.layoutWidget_2)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.layoutWidget_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font4)
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.layoutWidget_2)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.layoutWidget_2)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.layoutWidget_2)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.layoutWidget_2)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.layoutWidget_2)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.layoutWidget_2)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.layoutWidget_2)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.layoutWidget_2)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.layoutWidget_2)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.layoutWidget_2)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.layoutWidget_2)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.layoutWidget_2)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.layoutWidget_2)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.layoutWidget_2)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.layoutWidget_2)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame, 0, 0, 1, 4)
+
+        self.frame_3 = QFrame(self.pc_info_page)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget1 = QWidget(self.frame_3)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(40, 20, 301, 241))
+        self.gridLayout_10 = QGridLayout(self.widget1)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.label_108 = QLabel(self.widget1)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.widget1)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.widget1)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.widget1)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.widget1)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.widget1)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.widget1)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.widget1)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.widget1)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.widget1)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.widget1)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.widget1)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.widget1)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.widget1)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.widget1)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font4)
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 2)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget1 = QWidget(self.sysinfo)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 20, 494, 366))
+        self.gridLayout_5 = QGridLayout(self.layoutWidget1)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.label_26 = QLabel(self.layoutWidget1)
+        self.label_26.setObjectName(u"label_26")
+
+        self.gridLayout_5.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.layoutWidget1)
+        self.label_32.setObjectName(u"label_32")
+
+        self.gridLayout_5.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.layoutWidget1)
+        self.label_113.setObjectName(u"label_113")
+
+        self.gridLayout_5.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.layoutWidget1)
+        self.label_115.setObjectName(u"label_115")
+
+        self.gridLayout_5.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.layoutWidget1)
+        self.label_28.setObjectName(u"label_28")
+
+        self.gridLayout_5.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.layoutWidget1)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.layoutWidget1)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_5.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_111 = QLabel(self.layoutWidget1)
+        self.label_111.setObjectName(u"label_111")
+
+        self.gridLayout_5.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.layoutWidget1)
+        self.label_117.setObjectName(u"label_117")
+
+        self.gridLayout_5.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.layoutWidget1)
+        self.label_29.setObjectName(u"label_29")
+
+        self.gridLayout_5.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.layoutWidget1)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_5.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_30 = QLabel(self.layoutWidget1)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_5.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.layoutWidget1)
+        self.label_31.setObjectName(u"label_31")
+
+        self.gridLayout_5.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.layoutWidget1)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font4)
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_114 = QLabel(self.layoutWidget1)
+        self.label_114.setObjectName(u"label_114")
+
+        self.gridLayout_5.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_112 = QLabel(self.layoutWidget1)
+        self.label_112.setObjectName(u"label_112")
+
+        self.gridLayout_5.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.layoutWidget1)
+        self.label_35.setObjectName(u"label_35")
+
+        self.gridLayout_5.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.layoutWidget1)
+        self.label_119.setObjectName(u"label_119")
+
+        self.gridLayout_5.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.layoutWidget1)
+        self.label_118.setObjectName(u"label_118")
+
+        self.gridLayout_5.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.layoutWidget1)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_5.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.layoutWidget1)
+        self.label_116.setObjectName(u"label_116")
+
+        self.gridLayout_5.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.layoutWidget1)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_5.addWidget(self.label_34, 6, 1, 1, 1)
+
+        self.label_110 = QLabel(self.layoutWidget1)
+        self.label_110.setObjectName(u"label_110")
+
+        self.gridLayout_5.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_120 = QLabel(self.layoutWidget1)
+        self.label_120.setObjectName(u"label_120")
+
+        self.gridLayout_5.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.layoutWidget1)
+        self.label_121.setObjectName(u"label_121")
+
+        self.gridLayout_5.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_122 = QLabel(self.layoutWidget1)
+        self.label_122.setObjectName(u"label_122")
+
+        self.gridLayout_5.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_123 = QLabel(self.layoutWidget1)
+        self.label_123.setObjectName(u"label_123")
+
+        self.gridLayout_5.addWidget(self.label_123, 13, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 1, 3)
+
+        self.horizontalSpacer_2 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 2, 1, 1, 2)
+
+        self.pefromance = QFrame(self.pc_info_page)
+        self.pefromance.setObjectName(u"pefromance")
+        self.pefromance.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.pefromance.setFrameShape(QFrame.Shape.StyledPanel)
+        self.pefromance.setFrameShadow(QFrame.Shadow.Raised)
+        self.pefromance.setLineWidth(2)
+        self.layoutWidget2 = QWidget(self.pefromance)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(40, 20, 341, 241))
+        self.gridLayout_4 = QGridLayout(self.layoutWidget2)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.label_66 = QLabel(self.layoutWidget2)
+        self.label_66.setObjectName(u"label_66")
+        self.label_66.setMinimumSize(QSize(32, 32))
+        self.label_66.setMaximumSize(QSize(64, 64))
+        self.label_66.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_66.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_66, 1, 0, 1, 1)
+
+        self.label_65 = QLabel(self.layoutWidget2)
+        self.label_65.setObjectName(u"label_65")
+        self.label_65.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_65, 3, 1, 1, 1)
+
+        self.label_63 = QLabel(self.layoutWidget2)
+        self.label_63.setObjectName(u"label_63")
+        self.label_63.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_63, 2, 1, 1, 1)
+
+        self.label_67 = QLabel(self.layoutWidget2)
+        self.label_67.setObjectName(u"label_67")
+        self.label_67.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_67, 1, 1, 1, 1)
+
+        self.frame_8 = QFrame(self.layoutWidget2)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setMinimumSize(QSize(24, 24))
+        self.frame_8.setMaximumSize(QSize(24, 24))
+        self.frame_8.setStyleSheet(u"background-color: rgb(255, 170, 0);")
+        self.frame_8.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_8, 3, 2, 1, 1)
+
+        self.frame_6 = QFrame(self.layoutWidget2)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setMinimumSize(QSize(24, 24))
+        self.frame_6.setMaximumSize(QSize(24, 24))
+        self.frame_6.setStyleSheet(u"background-color:rgb(255, 85, 0)")
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_6, 1, 2, 1, 1)
+
+        self.label_61 = QLabel(self.layoutWidget2)
+        self.label_61.setObjectName(u"label_61")
+        self.label_61.setMinimumSize(QSize(32, 32))
+        self.label_61.setMaximumSize(QSize(64, 64))
+        self.label_61.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_61.setScaledContents(True)
+        self.label_61.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_61, 2, 0, 1, 1)
+
+        self.frame_7 = QFrame(self.layoutWidget2)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setMinimumSize(QSize(24, 24))
+        self.frame_7.setMaximumSize(QSize(24, 24))
+        self.frame_7.setStyleSheet(u"background-color:rgb(0, 255, 0)")
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_7, 2, 2, 1, 1)
+
+        self.label_62 = QLabel(self.layoutWidget2)
+        self.label_62.setObjectName(u"label_62")
+        self.label_62.setMinimumSize(QSize(32, 32))
+        self.label_62.setMaximumSize(QSize(64, 64))
+        self.label_62.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_62.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_62, 3, 0, 1, 1)
+
+        self.label_60 = QLabel(self.layoutWidget2)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setFont(font4)
+        self.label_60.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_60, 0, 0, 1, 3)
+
+
+        self.gridLayout_3.addWidget(self.pefromance, 1, 4, 1, 3)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_3, 2, 4, 1, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"WIFI Info", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"DISK", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_66.setText("")
+        self.label_65.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_63.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_67.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_61.setText("")
+        self.label_62.setText("")
+        self.label_60.setText(QCoreApplication.translate("MainWindow", u"Performance ", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1610, 973)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"color: #00AEEF;\n"
+"text-size: 13px bold;")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 3, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 6, 1, 1)
+
+        self.display = QFrame(self.pc_info_page)
+        self.display.setObjectName(u"display")
+        self.display.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.display.setFrameShape(QFrame.Shape.StyledPanel)
+        self.display.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget = QWidget(self.display)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(20, 20, 321, 241))
+        self.gridLayout_9 = QGridLayout(self.widget)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.label_48 = QLabel(self.widget)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_50 = QLabel(self.widget)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_96 = QLabel(self.widget)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_94 = QLabel(self.widget)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_43 = QLabel(self.widget)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_49 = QLabel(self.widget)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_45 = QLabel(self.widget)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.widget)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_99 = QLabel(self.widget)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_44 = QLabel(self.widget)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_98 = QLabel(self.widget)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_97 = QLabel(self.widget)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.widget)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_46 = QLabel(self.widget)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+        self.label_42 = QLabel(self.widget)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font4)
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.display, 1, 2, 1, 2)
+
+        self.frame = QFrame(self.pc_info_page)
+        self.frame.setObjectName(u"frame")
+        self.frame.setStyleSheet(u"QFrame {\n"
+"  \n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget = QWidget(self.frame)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 20, 281, 246))
+        self.gridLayout_6 = QGridLayout(self.layoutWidget)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.label_8 = QLabel(self.layoutWidget)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.layoutWidget)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.layoutWidget)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.layoutWidget)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.layoutWidget)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.layoutWidget)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.layoutWidget)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.layoutWidget)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.layoutWidget)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.layoutWidget)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.layoutWidget)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.layoutWidget)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.layoutWidget)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.layoutWidget)
+        self.label_93.setObjectName(u"label_93")
+        font5 = QFont()
+        font5.setFamilies([u"Arial"])
+        font5.setPointSize(14)
+        font5.setBold(True)
+        self.label_93.setFont(font5)
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.layoutWidget)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.layoutWidget)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.layoutWidget)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.layoutWidget)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.layoutWidget)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+        self.layoutWidget_2 = QWidget(self.frame)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(330, 20, 311, 276))
+        self.gridLayout_8 = QGridLayout(self.layoutWidget_2)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.label_88 = QLabel(self.layoutWidget_2)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.layoutWidget_2)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.layoutWidget_2)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.layoutWidget_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font4)
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.layoutWidget_2)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.layoutWidget_2)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.layoutWidget_2)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.layoutWidget_2)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.layoutWidget_2)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.layoutWidget_2)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.layoutWidget_2)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.layoutWidget_2)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.layoutWidget_2)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.layoutWidget_2)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.layoutWidget_2)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.layoutWidget_2)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.layoutWidget_2)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.layoutWidget_2)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.layoutWidget_2)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame, 0, 0, 1, 4)
+
+        self.frame_3 = QFrame(self.pc_info_page)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget1 = QWidget(self.frame_3)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(40, 20, 301, 241))
+        self.gridLayout_10 = QGridLayout(self.widget1)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.label_108 = QLabel(self.widget1)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.widget1)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.widget1)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.widget1)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.widget1)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.widget1)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.widget1)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.widget1)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.widget1)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.widget1)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.widget1)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.widget1)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.widget1)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.widget1)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.widget1)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font4)
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 2)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget1 = QWidget(self.sysinfo)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 20, 494, 366))
+        self.gridLayout_5 = QGridLayout(self.layoutWidget1)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.label_26 = QLabel(self.layoutWidget1)
+        self.label_26.setObjectName(u"label_26")
+
+        self.gridLayout_5.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.layoutWidget1)
+        self.label_32.setObjectName(u"label_32")
+
+        self.gridLayout_5.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.layoutWidget1)
+        self.label_113.setObjectName(u"label_113")
+
+        self.gridLayout_5.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.layoutWidget1)
+        self.label_115.setObjectName(u"label_115")
+
+        self.gridLayout_5.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.layoutWidget1)
+        self.label_28.setObjectName(u"label_28")
+
+        self.gridLayout_5.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.layoutWidget1)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.layoutWidget1)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_5.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_111 = QLabel(self.layoutWidget1)
+        self.label_111.setObjectName(u"label_111")
+
+        self.gridLayout_5.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.layoutWidget1)
+        self.label_117.setObjectName(u"label_117")
+
+        self.gridLayout_5.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.layoutWidget1)
+        self.label_29.setObjectName(u"label_29")
+
+        self.gridLayout_5.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.layoutWidget1)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_5.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_30 = QLabel(self.layoutWidget1)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_5.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.layoutWidget1)
+        self.label_31.setObjectName(u"label_31")
+
+        self.gridLayout_5.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.layoutWidget1)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font4)
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_114 = QLabel(self.layoutWidget1)
+        self.label_114.setObjectName(u"label_114")
+
+        self.gridLayout_5.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_112 = QLabel(self.layoutWidget1)
+        self.label_112.setObjectName(u"label_112")
+
+        self.gridLayout_5.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.layoutWidget1)
+        self.label_35.setObjectName(u"label_35")
+
+        self.gridLayout_5.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.layoutWidget1)
+        self.label_119.setObjectName(u"label_119")
+
+        self.gridLayout_5.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.layoutWidget1)
+        self.label_118.setObjectName(u"label_118")
+
+        self.gridLayout_5.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.layoutWidget1)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_5.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.layoutWidget1)
+        self.label_116.setObjectName(u"label_116")
+
+        self.gridLayout_5.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.layoutWidget1)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_5.addWidget(self.label_34, 6, 1, 1, 1)
+
+        self.label_110 = QLabel(self.layoutWidget1)
+        self.label_110.setObjectName(u"label_110")
+
+        self.gridLayout_5.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_120 = QLabel(self.layoutWidget1)
+        self.label_120.setObjectName(u"label_120")
+
+        self.gridLayout_5.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.layoutWidget1)
+        self.label_121.setObjectName(u"label_121")
+
+        self.gridLayout_5.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_122 = QLabel(self.layoutWidget1)
+        self.label_122.setObjectName(u"label_122")
+
+        self.gridLayout_5.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_123 = QLabel(self.layoutWidget1)
+        self.label_123.setObjectName(u"label_123")
+
+        self.gridLayout_5.addWidget(self.label_123, 13, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 1, 3)
+
+        self.horizontalSpacer_2 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 2, 1, 1, 2)
+
+        self.pefromance = QFrame(self.pc_info_page)
+        self.pefromance.setObjectName(u"pefromance")
+        self.pefromance.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.pefromance.setFrameShape(QFrame.Shape.StyledPanel)
+        self.pefromance.setFrameShadow(QFrame.Shadow.Raised)
+        self.pefromance.setLineWidth(2)
+        self.layoutWidget2 = QWidget(self.pefromance)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(40, 20, 341, 241))
+        self.gridLayout_4 = QGridLayout(self.layoutWidget2)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.label_66 = QLabel(self.layoutWidget2)
+        self.label_66.setObjectName(u"label_66")
+        self.label_66.setMinimumSize(QSize(32, 32))
+        self.label_66.setMaximumSize(QSize(64, 64))
+        self.label_66.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_66.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_66, 1, 0, 1, 1)
+
+        self.label_65 = QLabel(self.layoutWidget2)
+        self.label_65.setObjectName(u"label_65")
+        self.label_65.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_65, 3, 1, 1, 1)
+
+        self.label_63 = QLabel(self.layoutWidget2)
+        self.label_63.setObjectName(u"label_63")
+        self.label_63.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_63, 2, 1, 1, 1)
+
+        self.label_67 = QLabel(self.layoutWidget2)
+        self.label_67.setObjectName(u"label_67")
+        self.label_67.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_67, 1, 1, 1, 1)
+
+        self.frame_8 = QFrame(self.layoutWidget2)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setMinimumSize(QSize(24, 24))
+        self.frame_8.setMaximumSize(QSize(24, 24))
+        self.frame_8.setStyleSheet(u"background-color: rgb(255, 170, 0);")
+        self.frame_8.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_8, 3, 2, 1, 1)
+
+        self.frame_6 = QFrame(self.layoutWidget2)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setMinimumSize(QSize(24, 24))
+        self.frame_6.setMaximumSize(QSize(24, 24))
+        self.frame_6.setStyleSheet(u"background-color:rgb(255, 85, 0)")
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_6, 1, 2, 1, 1)
+
+        self.label_61 = QLabel(self.layoutWidget2)
+        self.label_61.setObjectName(u"label_61")
+        self.label_61.setMinimumSize(QSize(32, 32))
+        self.label_61.setMaximumSize(QSize(64, 64))
+        self.label_61.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_61.setScaledContents(True)
+        self.label_61.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_61, 2, 0, 1, 1)
+
+        self.frame_7 = QFrame(self.layoutWidget2)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setMinimumSize(QSize(24, 24))
+        self.frame_7.setMaximumSize(QSize(24, 24))
+        self.frame_7.setStyleSheet(u"background-color:rgb(0, 255, 0)")
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_7, 2, 2, 1, 1)
+
+        self.label_62 = QLabel(self.layoutWidget2)
+        self.label_62.setObjectName(u"label_62")
+        self.label_62.setMinimumSize(QSize(32, 32))
+        self.label_62.setMaximumSize(QSize(64, 64))
+        self.label_62.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_62.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_62, 3, 0, 1, 1)
+
+        self.label_60 = QLabel(self.layoutWidget2)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setFont(font4)
+        self.label_60.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_60, 0, 0, 1, 3)
+
+
+        self.gridLayout_3.addWidget(self.pefromance, 1, 4, 1, 3)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_3, 2, 4, 1, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"WIFI Info", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"DISK", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_66.setText("")
+        self.label_65.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_63.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_67.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_61.setText("")
+        self.label_62.setText("")
+        self.label_60.setText(QCoreApplication.translate("MainWindow", u"Performance ", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1610, 973)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"color: #00AEEF;\n"
+"text-size: 13px bold;")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 3, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 6, 1, 1)
+
+        self.display = QFrame(self.pc_info_page)
+        self.display.setObjectName(u"display")
+        self.display.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.display.setFrameShape(QFrame.Shape.StyledPanel)
+        self.display.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget = QWidget(self.display)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(20, 20, 321, 241))
+        self.gridLayout_9 = QGridLayout(self.widget)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.label_48 = QLabel(self.widget)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_50 = QLabel(self.widget)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_96 = QLabel(self.widget)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_94 = QLabel(self.widget)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_43 = QLabel(self.widget)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_49 = QLabel(self.widget)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_45 = QLabel(self.widget)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.widget)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_99 = QLabel(self.widget)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_44 = QLabel(self.widget)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_98 = QLabel(self.widget)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_97 = QLabel(self.widget)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.widget)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_46 = QLabel(self.widget)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+        self.label_42 = QLabel(self.widget)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font4)
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.display, 1, 2, 1, 2)
+
+        self.frame = QFrame(self.pc_info_page)
+        self.frame.setObjectName(u"frame")
+        self.frame.setStyleSheet(u"QFrame {\n"
+"  \n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget = QWidget(self.frame)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(20, 20, 281, 246))
+        self.gridLayout_6 = QGridLayout(self.layoutWidget)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.label_8 = QLabel(self.layoutWidget)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.layoutWidget)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.layoutWidget)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.layoutWidget)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.layoutWidget)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.layoutWidget)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.layoutWidget)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.layoutWidget)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.layoutWidget)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.layoutWidget)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.layoutWidget)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.layoutWidget)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.layoutWidget)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.layoutWidget)
+        self.label_93.setObjectName(u"label_93")
+        font5 = QFont()
+        font5.setFamilies([u"Arial"])
+        font5.setPointSize(14)
+        font5.setBold(True)
+        self.label_93.setFont(font5)
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.layoutWidget)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.layoutWidget)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.layoutWidget)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.layoutWidget)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.layoutWidget)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+        self.layoutWidget_2 = QWidget(self.frame)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(330, 20, 311, 276))
+        self.gridLayout_8 = QGridLayout(self.layoutWidget_2)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.label_88 = QLabel(self.layoutWidget_2)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.layoutWidget_2)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.layoutWidget_2)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.layoutWidget_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font4)
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.layoutWidget_2)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.layoutWidget_2)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.layoutWidget_2)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.layoutWidget_2)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.layoutWidget_2)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.layoutWidget_2)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.layoutWidget_2)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.layoutWidget_2)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.layoutWidget_2)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.layoutWidget_2)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.layoutWidget_2)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.layoutWidget_2)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.layoutWidget_2)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.layoutWidget_2)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.layoutWidget_2)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame, 0, 0, 1, 4)
+
+        self.frame_3 = QFrame(self.pc_info_page)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget1 = QWidget(self.frame_3)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(40, 20, 301, 241))
+        self.gridLayout_10 = QGridLayout(self.widget1)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.label_108 = QLabel(self.widget1)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.widget1)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.widget1)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.widget1)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.widget1)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.widget1)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.widget1)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.widget1)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.widget1)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.widget1)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.widget1)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.widget1)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.widget1)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.widget1)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.widget1)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font4)
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.frame_3, 1, 0, 1, 2)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget1 = QWidget(self.sysinfo)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 20, 494, 366))
+        self.gridLayout_5 = QGridLayout(self.layoutWidget1)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.label_26 = QLabel(self.layoutWidget1)
+        self.label_26.setObjectName(u"label_26")
+
+        self.gridLayout_5.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.layoutWidget1)
+        self.label_32.setObjectName(u"label_32")
+
+        self.gridLayout_5.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.layoutWidget1)
+        self.label_113.setObjectName(u"label_113")
+
+        self.gridLayout_5.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.layoutWidget1)
+        self.label_115.setObjectName(u"label_115")
+
+        self.gridLayout_5.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.layoutWidget1)
+        self.label_28.setObjectName(u"label_28")
+
+        self.gridLayout_5.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.layoutWidget1)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.layoutWidget1)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_5.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_111 = QLabel(self.layoutWidget1)
+        self.label_111.setObjectName(u"label_111")
+
+        self.gridLayout_5.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.layoutWidget1)
+        self.label_117.setObjectName(u"label_117")
+
+        self.gridLayout_5.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.layoutWidget1)
+        self.label_29.setObjectName(u"label_29")
+
+        self.gridLayout_5.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.layoutWidget1)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_5.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_30 = QLabel(self.layoutWidget1)
+        self.label_30.setObjectName(u"label_30")
+
+        self.gridLayout_5.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.layoutWidget1)
+        self.label_31.setObjectName(u"label_31")
+
+        self.gridLayout_5.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.layoutWidget1)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font4)
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_114 = QLabel(self.layoutWidget1)
+        self.label_114.setObjectName(u"label_114")
+
+        self.gridLayout_5.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_112 = QLabel(self.layoutWidget1)
+        self.label_112.setObjectName(u"label_112")
+
+        self.gridLayout_5.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.layoutWidget1)
+        self.label_35.setObjectName(u"label_35")
+
+        self.gridLayout_5.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.layoutWidget1)
+        self.label_119.setObjectName(u"label_119")
+
+        self.gridLayout_5.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.layoutWidget1)
+        self.label_118.setObjectName(u"label_118")
+
+        self.gridLayout_5.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.layoutWidget1)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_5.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.layoutWidget1)
+        self.label_116.setObjectName(u"label_116")
+
+        self.gridLayout_5.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.layoutWidget1)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_5.addWidget(self.label_34, 6, 1, 1, 1)
+
+        self.label_110 = QLabel(self.layoutWidget1)
+        self.label_110.setObjectName(u"label_110")
+
+        self.gridLayout_5.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_120 = QLabel(self.layoutWidget1)
+        self.label_120.setObjectName(u"label_120")
+
+        self.gridLayout_5.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.layoutWidget1)
+        self.label_121.setObjectName(u"label_121")
+
+        self.gridLayout_5.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_122 = QLabel(self.layoutWidget1)
+        self.label_122.setObjectName(u"label_122")
+
+        self.gridLayout_5.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_123 = QLabel(self.layoutWidget1)
+        self.label_123.setObjectName(u"label_123")
+
+        self.gridLayout_5.addWidget(self.label_123, 13, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 1, 3)
+
+        self.horizontalSpacer_2 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 2, 1, 1, 2)
+
+        self.pefromance = QFrame(self.pc_info_page)
+        self.pefromance.setObjectName(u"pefromance")
+        self.pefromance.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.pefromance.setFrameShape(QFrame.Shape.StyledPanel)
+        self.pefromance.setFrameShadow(QFrame.Shadow.Raised)
+        self.pefromance.setLineWidth(2)
+        self.layoutWidget2 = QWidget(self.pefromance)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(40, 20, 341, 241))
+        self.gridLayout_4 = QGridLayout(self.layoutWidget2)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.label_66 = QLabel(self.layoutWidget2)
+        self.label_66.setObjectName(u"label_66")
+        self.label_66.setMinimumSize(QSize(32, 32))
+        self.label_66.setMaximumSize(QSize(64, 64))
+        self.label_66.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_66.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_66, 1, 0, 1, 1)
+
+        self.label_65 = QLabel(self.layoutWidget2)
+        self.label_65.setObjectName(u"label_65")
+        self.label_65.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_65, 3, 1, 1, 1)
+
+        self.label_63 = QLabel(self.layoutWidget2)
+        self.label_63.setObjectName(u"label_63")
+        self.label_63.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_63, 2, 1, 1, 1)
+
+        self.label_67 = QLabel(self.layoutWidget2)
+        self.label_67.setObjectName(u"label_67")
+        self.label_67.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_67, 1, 1, 1, 1)
+
+        self.frame_8 = QFrame(self.layoutWidget2)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setMinimumSize(QSize(24, 24))
+        self.frame_8.setMaximumSize(QSize(24, 24))
+        self.frame_8.setStyleSheet(u"background-color: rgb(255, 170, 0);")
+        self.frame_8.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_8, 3, 2, 1, 1)
+
+        self.frame_6 = QFrame(self.layoutWidget2)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setMinimumSize(QSize(24, 24))
+        self.frame_6.setMaximumSize(QSize(24, 24))
+        self.frame_6.setStyleSheet(u"background-color:rgb(255, 85, 0)")
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_6, 1, 2, 1, 1)
+
+        self.label_61 = QLabel(self.layoutWidget2)
+        self.label_61.setObjectName(u"label_61")
+        self.label_61.setMinimumSize(QSize(32, 32))
+        self.label_61.setMaximumSize(QSize(64, 64))
+        self.label_61.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_61.setScaledContents(True)
+        self.label_61.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_61, 2, 0, 1, 1)
+
+        self.frame_7 = QFrame(self.layoutWidget2)
+        self.frame_7.setObjectName(u"frame_7")
+        self.frame_7.setMinimumSize(QSize(24, 24))
+        self.frame_7.setMaximumSize(QSize(24, 24))
+        self.frame_7.setStyleSheet(u"background-color:rgb(0, 255, 0)")
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
+
+        self.gridLayout_4.addWidget(self.frame_7, 2, 2, 1, 1)
+
+        self.label_62 = QLabel(self.layoutWidget2)
+        self.label_62.setObjectName(u"label_62")
+        self.label_62.setMinimumSize(QSize(32, 32))
+        self.label_62.setMaximumSize(QSize(64, 64))
+        self.label_62.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_62.setScaledContents(True)
+
+        self.gridLayout_4.addWidget(self.label_62, 3, 0, 1, 1)
+
+        self.label_60 = QLabel(self.layoutWidget2)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setFont(font4)
+        self.label_60.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_4.addWidget(self.label_60, 0, 0, 1, 3)
+
+
+        self.gridLayout_3.addWidget(self.pefromance, 1, 4, 1, 3)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.horizontalSpacer_3 = QSpacerItem(252, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.gridLayout_3.addItem(self.horizontalSpacer_3, 2, 4, 1, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"WIFI Info", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"DISK", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_66.setText("")
+        self.label_65.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_63.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_67.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_61.setText("")
+        self.label_62.setText("")
+        self.label_60.setText(QCoreApplication.translate("MainWindow", u"Performance ", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1610, 973)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"color: #00AEEF;\n"
+"text-size: 13px bold;")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.displayfrmae = QFrame(self.pc_info_page)
+        self.displayfrmae.setObjectName(u"displayfrmae")
+        self.displayfrmae.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.displayfrmae.setFrameShape(QFrame.Shape.StyledPanel)
+        self.displayfrmae.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget = QWidget(self.displayfrmae)
+        self.widget.setObjectName(u"widget")
+        self.widget.setGeometry(QRect(20, 20, 321, 241))
+        self.gridLayout_9 = QGridLayout(self.widget)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.label_48 = QLabel(self.widget)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_50 = QLabel(self.widget)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_96 = QLabel(self.widget)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_94 = QLabel(self.widget)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_43 = QLabel(self.widget)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_49 = QLabel(self.widget)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_45 = QLabel(self.widget)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.widget)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_99 = QLabel(self.widget)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_44 = QLabel(self.widget)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_98 = QLabel(self.widget)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_97 = QLabel(self.widget)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.widget)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_46 = QLabel(self.widget)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+        self.label_42 = QLabel(self.widget)
+        self.label_42.setObjectName(u"label_42")
+        font5 = QFont()
+        font5.setPointSize(10)
+        font5.setBold(True)
+        self.label_42.setFont(font5)
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.displayfrmae, 1, 2, 1, 2)
+
+        self.networkframe = QFrame(self.pc_info_page)
+        self.networkframe.setObjectName(u"networkframe")
+        self.networkframe.setStyleSheet(u"QFrame {\n"
+"  \n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.networkframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.networkframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget = QWidget(self.networkframe)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(30, 20, 281, 251))
+        self.gridLayout_6 = QGridLayout(self.layoutWidget)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
+        self.label_8 = QLabel(self.layoutWidget)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.layoutWidget)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.layoutWidget)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.layoutWidget)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.layoutWidget)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.layoutWidget)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.layoutWidget)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.layoutWidget)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.layoutWidget)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.layoutWidget)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.layoutWidget)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.layoutWidget)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.layoutWidget)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.layoutWidget)
+        self.label_93.setObjectName(u"label_93")
+        font6 = QFont()
+        font6.setFamilies([u"Segoe UI"])
+        font6.setPointSize(10)
+        font6.setBold(True)
+        self.label_93.setFont(font6)
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.layoutWidget)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.layoutWidget)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.layoutWidget)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.layoutWidget)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.layoutWidget)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+        self.layoutWidget_2 = QWidget(self.networkframe)
+        self.layoutWidget_2.setObjectName(u"layoutWidget_2")
+        self.layoutWidget_2.setGeometry(QRect(330, 20, 311, 251))
+        self.gridLayout_8 = QGridLayout(self.layoutWidget_2)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.label_88 = QLabel(self.layoutWidget_2)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.layoutWidget_2)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.layoutWidget_2)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.layoutWidget_2)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setFont(font5)
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.layoutWidget_2)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.layoutWidget_2)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.layoutWidget_2)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.layoutWidget_2)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.layoutWidget_2)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.layoutWidget_2)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.layoutWidget_2)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.layoutWidget_2)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.layoutWidget_2)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.layoutWidget_2)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.layoutWidget_2)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.layoutWidget_2)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.layoutWidget_2)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.layoutWidget_2)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.layoutWidget_2)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.networkframe, 0, 0, 1, 4)
+
+        self.diskframe = QFrame(self.pc_info_page)
+        self.diskframe.setObjectName(u"diskframe")
+        self.diskframe.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.diskframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.diskframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.widget1 = QWidget(self.diskframe)
+        self.widget1.setObjectName(u"widget1")
+        self.widget1.setGeometry(QRect(40, 20, 301, 241))
+        self.gridLayout_10 = QGridLayout(self.widget1)
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
+        self.label_108 = QLabel(self.widget1)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.widget1)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.widget1)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.widget1)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.widget1)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.widget1)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.widget1)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.widget1)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.widget1)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.widget1)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.widget1)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.widget1)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.widget1)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.widget1)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.widget1)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font5)
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_3.addWidget(self.diskframe, 1, 0, 1, 2)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget1 = QWidget(self.sysinfo)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(20, 20, 494, 366))
+        self.syslayout = QGridLayout(self.layoutWidget1)
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setContentsMargins(0, 0, 0, 0)
+        self.label_26 = QLabel(self.layoutWidget1)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.layoutWidget1)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.layoutWidget1)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.layoutWidget1)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.layoutWidget1)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.layoutWidget1)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.layoutWidget1)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_111 = QLabel(self.layoutWidget1)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.layoutWidget1)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.layoutWidget1)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.layoutWidget1)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_30 = QLabel(self.layoutWidget1)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.layoutWidget1)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.layoutWidget1)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font5)
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_114 = QLabel(self.layoutWidget1)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_112 = QLabel(self.layoutWidget1)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.layoutWidget1)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.layoutWidget1)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.layoutWidget1)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.layoutWidget1)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.layoutWidget1)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.layoutWidget1)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+        self.label_110 = QLabel(self.layoutWidget1)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_120 = QLabel(self.layoutWidget1)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.layoutWidget1)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_122 = QLabel(self.layoutWidget1)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_123 = QLabel(self.layoutWidget1)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 1, 2)
+
+        self.pefromance = QFrame(self.pc_info_page)
+        self.pefromance.setObjectName(u"pefromance")
+        self.pefromance.setStyleSheet(u"QFrame {\n"
+"\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}")
+        self.pefromance.setFrameShape(QFrame.Shape.StyledPanel)
+        self.pefromance.setFrameShadow(QFrame.Shadow.Raised)
+        self.pefromance.setLineWidth(2)
+        self.layoutWidget2 = QWidget(self.pefromance)
+        self.layoutWidget2.setObjectName(u"layoutWidget2")
+        self.layoutWidget2.setGeometry(QRect(60, 80, 401, 232))
+        self.perfomrncelgrdlayout = QGridLayout(self.layoutWidget2)
+        self.perfomrncelgrdlayout.setObjectName(u"perfomrncelgrdlayout")
+        self.perfomrncelgrdlayout.setContentsMargins(0, 0, 0, 0)
+        self.label_61 = QLabel(self.layoutWidget2)
+        self.label_61.setObjectName(u"label_61")
+        self.label_61.setMinimumSize(QSize(32, 32))
+        self.label_61.setMaximumSize(QSize(64, 64))
+        self.label_61.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_61.setScaledContents(True)
+        self.label_61.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_61, 2, 0, 1, 1)
+
+        self.label_67 = QLabel(self.layoutWidget2)
+        self.label_67.setObjectName(u"label_67")
+        self.label_67.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_67, 1, 1, 1, 1)
+
+        self.label_65 = QLabel(self.layoutWidget2)
+        self.label_65.setObjectName(u"label_65")
+        self.label_65.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_65, 3, 1, 1, 1)
+
+        self.label_66 = QLabel(self.layoutWidget2)
+        self.label_66.setObjectName(u"label_66")
+        self.label_66.setMinimumSize(QSize(32, 32))
+        self.label_66.setMaximumSize(QSize(64, 64))
+        self.label_66.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_66.setScaledContents(True)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_66, 1, 0, 1, 1)
+
+        self.label_62 = QLabel(self.layoutWidget2)
+        self.label_62.setObjectName(u"label_62")
+        self.label_62.setMinimumSize(QSize(32, 32))
+        self.label_62.setMaximumSize(QSize(64, 64))
+        self.label_62.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_62.setScaledContents(True)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_62, 3, 0, 1, 1)
+
+        self.label_60 = QLabel(self.layoutWidget2)
+        self.label_60.setObjectName(u"label_60")
+        self.label_60.setFont(font5)
+        self.label_60.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_60, 0, 0, 1, 3)
+
+        self.label_63 = QLabel(self.layoutWidget2)
+        self.label_63.setObjectName(u"label_63")
+        self.label_63.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout.addWidget(self.label_63, 2, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.pefromance, 1, 4, 1, 2)
+
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 2, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 4, 1, 1)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_61.setText("")
+        self.label_67.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_65.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_66.setText("")
+        self.label_62.setText("")
+        self.label_60.setText(QCoreApplication.translate("MainWindow", u"Performance ", None))
+        self.label_63.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1875, 1044)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.networkframe = QFrame(self.pc_info_page)
+        self.networkframe.setObjectName(u"networkframe")
+        self.networkframe.setStyleSheet(u"")
+        self.networkframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.networkframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.networkframe)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setHorizontalSpacing(8)
+        self.gridLayout_6.setVerticalSpacing(10)
+        self.gridLayout_6.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.networkframe)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.networkframe)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.networkframe)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.networkframe)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.networkframe)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.networkframe)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.networkframe)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.networkframe)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.networkframe)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.networkframe)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.networkframe)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.networkframe)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.networkframe)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.networkframe)
+        self.label_93.setObjectName(u"label_93")
+        font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
+        font5.setPointSize(10)
+        font5.setBold(True)
+        self.label_93.setFont(font5)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.networkframe)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.networkframe)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.networkframe)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.networkframe)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.networkframe)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.gridLayout_8 = QGridLayout()
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setHorizontalSpacing(8)
+        self.gridLayout_8.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.networkframe)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.networkframe)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.networkframe)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.networkframe)
+        self.label_5.setObjectName(u"label_5")
+        font6 = QFont()
+        font6.setPointSize(10)
+        font6.setBold(True)
+        self.label_5.setFont(font6)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.networkframe)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.networkframe)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.networkframe)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.networkframe)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.networkframe)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.networkframe)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.networkframe)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.networkframe)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.networkframe)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.networkframe)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.networkframe)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.networkframe)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.networkframe)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.networkframe)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.networkframe)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.gridLayout_8, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.networkframe, 0, 0, 1, 4)
+
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 2, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 4, 1, 1)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.diskframe = QFrame(self.pc_info_page)
+        self.diskframe.setObjectName(u"diskframe")
+        self.diskframe.setStyleSheet(u"")
+        self.diskframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.diskframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.diskframe)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.gridLayout_10 = QGridLayout()
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setVerticalSpacing(2)
+        self.label_108 = QLabel(self.diskframe)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.diskframe)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.diskframe)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.diskframe)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.diskframe)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.diskframe)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.diskframe)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.diskframe)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.diskframe)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.diskframe)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.diskframe)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.diskframe)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.diskframe)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.diskframe)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.diskframe)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font6)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.gridLayout_10, 0, 0, 1, 1)
+
+        self.gridLayout_9 = QGridLayout()
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(-1, 0, -1, -1)
+        self.label_98 = QLabel(self.diskframe)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.diskframe)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font6)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.diskframe)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.diskframe)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.diskframe)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.diskframe)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.diskframe)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.diskframe)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.diskframe)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.diskframe)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.diskframe)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.diskframe)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.diskframe)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.diskframe)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.diskframe)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.gridLayout_9, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.diskframe, 1, 0, 1, 4)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font6)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.frame = QFrame(self.sysinfo)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget_4 = QWidget(self.frame)
+        self.layoutWidget_4.setObjectName(u"layoutWidget_4")
+        self.layoutWidget_4.setGeometry(QRect(44, 50, 391, 241))
+        self.perfomrncelgrdlayout_2 = QGridLayout(self.layoutWidget_4)
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.perfomrncelgrdlayout_2.setContentsMargins(0, 0, 0, 0)
+        self.label_125 = QLabel(self.layoutWidget_4)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 1, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.layoutWidget_4)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 1, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.layoutWidget_4)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 2, 2, 1, 1)
+
+        self.label_127 = QLabel(self.layoutWidget_4)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 1, 0, 1, 1)
+
+        self.label_126 = QLabel(self.layoutWidget_4)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 3, 1, 1, 1)
+
+        self.label_124 = QLabel(self.layoutWidget_4)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 2, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.layoutWidget_4)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 3, 2, 1, 1)
+
+        self.label_129 = QLabel(self.layoutWidget_4)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 2, 1, 1, 1)
+
+        self.label_128 = QLabel(self.layoutWidget_4)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 3, 0, 1, 1)
+
+        self.label_130 = QLabel(self.layoutWidget_4)
+        self.label_130.setObjectName(u"label_130")
+        self.label_130.setFont(font6)
+        self.label_130.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_130.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_130, 0, 0, 1, 3)
+
+
+        self.gridLayout_11.addWidget(self.frame, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.label_130.setText(QCoreApplication.translate("MainWindow", u"Usage", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1875, 1044)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+" font-size: 12px;\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.networkframe = QFrame(self.pc_info_page)
+        self.networkframe.setObjectName(u"networkframe")
+        self.networkframe.setStyleSheet(u"")
+        self.networkframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.networkframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.networkframe)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setHorizontalSpacing(8)
+        self.gridLayout_6.setVerticalSpacing(10)
+        self.gridLayout_6.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.networkframe)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.networkframe)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.networkframe)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.networkframe)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.networkframe)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.networkframe)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.networkframe)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.networkframe)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.networkframe)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.networkframe)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.networkframe)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.networkframe)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.networkframe)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.networkframe)
+        self.label_93.setObjectName(u"label_93")
+        font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
+        font5.setBold(True)
+        self.label_93.setFont(font5)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.networkframe)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.networkframe)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.networkframe)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.networkframe)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.networkframe)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.gridLayout_8 = QGridLayout()
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setHorizontalSpacing(8)
+        self.gridLayout_8.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.networkframe)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.networkframe)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.networkframe)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.networkframe)
+        self.label_5.setObjectName(u"label_5")
+        font6 = QFont()
+        font6.setBold(True)
+        self.label_5.setFont(font6)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.networkframe)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.networkframe)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.networkframe)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.networkframe)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.networkframe)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.networkframe)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.networkframe)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.networkframe)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.networkframe)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.networkframe)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.networkframe)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.networkframe)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.networkframe)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.networkframe)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.networkframe)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.gridLayout_8, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.networkframe, 0, 0, 1, 4)
+
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 2, 1, 1)
+
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 4, 1, 1)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.diskframe = QFrame(self.pc_info_page)
+        self.diskframe.setObjectName(u"diskframe")
+        self.diskframe.setStyleSheet(u"")
+        self.diskframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.diskframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.diskframe)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.gridLayout_10 = QGridLayout()
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setVerticalSpacing(2)
+        self.label_108 = QLabel(self.diskframe)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.diskframe)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.diskframe)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.diskframe)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.diskframe)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.diskframe)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.diskframe)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.diskframe)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.diskframe)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.diskframe)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.diskframe)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.diskframe)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.diskframe)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.diskframe)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.diskframe)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font6)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.gridLayout_10, 0, 0, 1, 1)
+
+        self.gridLayout_9 = QGridLayout()
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(-1, 0, -1, -1)
+        self.label_98 = QLabel(self.diskframe)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.diskframe)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font6)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.diskframe)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.diskframe)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.diskframe)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.diskframe)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.diskframe)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.diskframe)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.diskframe)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.diskframe)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.diskframe)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.diskframe)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.diskframe)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.diskframe)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.diskframe)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.gridLayout_9, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.diskframe, 1, 0, 1, 4)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font6)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.frame = QFrame(self.sysinfo)
+        self.frame.setObjectName(u"frame")
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
+        self.layoutWidget_4 = QWidget(self.frame)
+        self.layoutWidget_4.setObjectName(u"layoutWidget_4")
+        self.layoutWidget_4.setGeometry(QRect(44, 50, 391, 241))
+        self.perfomrncelgrdlayout_2 = QGridLayout(self.layoutWidget_4)
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.perfomrncelgrdlayout_2.setContentsMargins(0, 0, 0, 0)
+        self.label_125 = QLabel(self.layoutWidget_4)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 1, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.layoutWidget_4)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 1, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.layoutWidget_4)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 2, 2, 1, 1)
+
+        self.label_127 = QLabel(self.layoutWidget_4)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 1, 0, 1, 1)
+
+        self.label_126 = QLabel(self.layoutWidget_4)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 3, 1, 1, 1)
+
+        self.label_124 = QLabel(self.layoutWidget_4)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 2, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.layoutWidget_4)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 3, 2, 1, 1)
+
+        self.label_129 = QLabel(self.layoutWidget_4)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 2, 1, 1, 1)
+
+        self.label_128 = QLabel(self.layoutWidget_4)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 3, 0, 1, 1)
+
+        self.label_130 = QLabel(self.layoutWidget_4)
+        self.label_130.setObjectName(u"label_130")
+        self.label_130.setFont(font6)
+        self.label_130.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_130.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_130, 0, 0, 1, 3)
+
+
+        self.gridLayout_11.addWidget(self.frame, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.label_130.setText(QCoreApplication.translate("MainWindow", u"Usage", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLayout, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QStackedWidget, QStatusBar,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1273, 713)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(2)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto Medium"])
+        font1.setPointSize(11)
+        font1.setBold(True)
+        self.home_1_button.setFont(font1)
+        icon = QIcon()
+        icon.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_1_button.setIcon(icon)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        font2 = QFont()
+        font2.setFamilies([u"Roboto"])
+        font2.setPointSize(12)
+        font2.setBold(True)
+        self.app_1_button.setFont(font2)
+        icon1 = QIcon()
+        icon1.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_1_button.setIcon(icon1)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font2)
+        icon2 = QIcon()
+        icon2.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_1_button.setIcon(icon2)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font2)
+        icon3 = QIcon()
+        icon3.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_1_button.setIcon(icon3)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font2)
+        icon4 = QIcon()
+        icon4.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_1_button.setIcon(icon4)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        self.home_2_button.setIcon(icon)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        self.app_2_button.setIcon(icon1)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        self.about_2_button.setIcon(icon2)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        self.update_2_button.setIcon(icon3)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        self.exit_2_button.setIcon(icon4)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(15)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy3)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon5 = QIcon()
+        icon5.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon5)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setFont(font2)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon6)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon7)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon8)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon9)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon10)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon11)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon12)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon13 = QIcon()
+        icon13.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon13)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon14 = QIcon()
+        icon14.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon14)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon15 = QIcon()
+        icon15.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon15)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon16 = QIcon()
+        icon16.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon16)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font3 = QFont()
+        font3.setFamilies([u"Arial"])
+        font3.setPointSize(14)
+        self.pcinfo_button.setFont(font3)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon17 = QIcon()
+        icon17.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon17)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.about_page = QWidget()
+        self.about_page.setObjectName(u"about_page")
+        self.label_3 = QLabel(self.about_page)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(170, 65, 301, 111))
+        self.stackedWidget.addWidget(self.about_page)
+        self.update_page = QWidget()
+        self.update_page.setObjectName(u"update_page")
+        self.label_6 = QLabel(self.update_page)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(240, 170, 221, 101))
+        self.stackedWidget.addWidget(self.update_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font4 = QFont()
+        font4.setPointSize(14)
+        font4.setBold(True)
+        self.pc_info_page.setFont(font4)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+" font-size: 12px;\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.pushButton_2 = QPushButton(self.pc_info_page)
+        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.pushButton_2.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon18 = QIcon(QIcon.fromTheme(u"printer"))
+        self.pushButton_2.setIcon(icon18)
+
+        self.gridLayout_3.addWidget(self.pushButton_2, 2, 4, 1, 1)
+
+        self.networkframe = QFrame(self.pc_info_page)
+        self.networkframe.setObjectName(u"networkframe")
+        self.networkframe.setStyleSheet(u"")
+        self.networkframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.networkframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.networkframe)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.gridLayout_6.setHorizontalSpacing(8)
+        self.gridLayout_6.setVerticalSpacing(10)
+        self.gridLayout_6.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.networkframe)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout_6.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.networkframe)
+        self.label_52.setObjectName(u"label_52")
+
+        self.gridLayout_6.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.networkframe)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_6.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.networkframe)
+        self.label_7.setObjectName(u"label_7")
+
+        self.gridLayout_6.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.networkframe)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_6.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.networkframe)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout_6.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.networkframe)
+        self.label_41.setObjectName(u"label_41")
+
+        self.gridLayout_6.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.networkframe)
+        self.label_53.setObjectName(u"label_53")
+
+        self.gridLayout_6.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.networkframe)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_6.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.networkframe)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_6.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.networkframe)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_6.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.networkframe)
+        self.label_51.setObjectName(u"label_51")
+
+        self.gridLayout_6.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.networkframe)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.networkframe)
+        self.label_93.setObjectName(u"label_93")
+        font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
+        font5.setBold(True)
+        self.label_93.setFont(font5)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.networkframe)
+        self.label_40.setObjectName(u"label_40")
+
+        self.gridLayout_6.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.networkframe)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_6.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.networkframe)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_6.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.networkframe)
+        self.label_100.setObjectName(u"label_100")
+
+        self.gridLayout_6.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.networkframe)
+        self.label_101.setObjectName(u"label_101")
+
+        self.gridLayout_6.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.gridLayout_8 = QGridLayout()
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_8.setHorizontalSpacing(8)
+        self.gridLayout_8.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.networkframe)
+        self.label_88.setObjectName(u"label_88")
+
+        self.gridLayout_8.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.networkframe)
+        self.label_80.setObjectName(u"label_80")
+
+        self.gridLayout_8.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.networkframe)
+        self.label_92.setObjectName(u"label_92")
+
+        self.gridLayout_8.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.networkframe)
+        self.label_5.setObjectName(u"label_5")
+        font6 = QFont()
+        font6.setBold(True)
+        self.label_5.setFont(font6)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_8.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.networkframe)
+        self.label_81.setObjectName(u"label_81")
+
+        self.gridLayout_8.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.networkframe)
+        self.label_84.setObjectName(u"label_84")
+
+        self.gridLayout_8.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.networkframe)
+        self.label_91.setObjectName(u"label_91")
+
+        self.gridLayout_8.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.networkframe)
+        self.label_79.setObjectName(u"label_79")
+
+        self.gridLayout_8.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.networkframe)
+        self.label_85.setObjectName(u"label_85")
+
+        self.gridLayout_8.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.networkframe)
+        self.label_87.setObjectName(u"label_87")
+
+        self.gridLayout_8.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.networkframe)
+        self.label_82.setObjectName(u"label_82")
+
+        self.gridLayout_8.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.networkframe)
+        self.label_86.setObjectName(u"label_86")
+
+        self.gridLayout_8.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.networkframe)
+        self.label_78.setObjectName(u"label_78")
+
+        self.gridLayout_8.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.networkframe)
+        self.label_83.setObjectName(u"label_83")
+
+        self.gridLayout_8.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.networkframe)
+        self.label_90.setObjectName(u"label_90")
+
+        self.gridLayout_8.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.networkframe)
+        self.label_89.setObjectName(u"label_89")
+
+        self.gridLayout_8.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.networkframe)
+        self.label_102.setObjectName(u"label_102")
+
+        self.gridLayout_8.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.networkframe)
+        self.label_103.setObjectName(u"label_103")
+
+        self.gridLayout_8.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.networkframe)
+        self.label_77.setObjectName(u"label_77")
+
+        self.gridLayout_8.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.gridLayout_8, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.networkframe, 0, 0, 1, 4)
+
+        self.diskframe = QFrame(self.pc_info_page)
+        self.diskframe.setObjectName(u"diskframe")
+        self.diskframe.setStyleSheet(u"")
+        self.diskframe.setFrameShape(QFrame.Shape.StyledPanel)
+        self.diskframe.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.diskframe)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.gridLayout_10 = QGridLayout()
+        self.gridLayout_10.setObjectName(u"gridLayout_10")
+        self.gridLayout_10.setVerticalSpacing(2)
+        self.label_108 = QLabel(self.diskframe)
+        self.label_108.setObjectName(u"label_108")
+
+        self.gridLayout_10.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.diskframe)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout_10.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.diskframe)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_10.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.diskframe)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_10.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.diskframe)
+        self.label_104.setObjectName(u"label_104")
+
+        self.gridLayout_10.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.diskframe)
+        self.label_23.setObjectName(u"label_23")
+
+        self.gridLayout_10.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.diskframe)
+        self.label_109.setObjectName(u"label_109")
+
+        self.gridLayout_10.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.diskframe)
+        self.label_105.setObjectName(u"label_105")
+
+        self.gridLayout_10.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.diskframe)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_10.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.diskframe)
+        self.label_33.setObjectName(u"label_33")
+
+        self.gridLayout_10.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.diskframe)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_10.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.diskframe)
+        self.label_107.setObjectName(u"label_107")
+
+        self.gridLayout_10.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.diskframe)
+        self.label_106.setObjectName(u"label_106")
+
+        self.gridLayout_10.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.diskframe)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_10.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.diskframe)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font6)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_10.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.gridLayout_10, 0, 0, 1, 1)
+
+        self.gridLayout_9 = QGridLayout()
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(-1, 0, -1, -1)
+        self.label_98 = QLabel(self.diskframe)
+        self.label_98.setObjectName(u"label_98")
+
+        self.gridLayout_9.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.diskframe)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font6)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_9.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.diskframe)
+        self.label_96.setObjectName(u"label_96")
+
+        self.gridLayout_9.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.diskframe)
+        self.label_48.setObjectName(u"label_48")
+
+        self.gridLayout_9.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.diskframe)
+        self.label_94.setObjectName(u"label_94")
+
+        self.gridLayout_9.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.diskframe)
+        self.label_99.setObjectName(u"label_99")
+
+        self.gridLayout_9.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.diskframe)
+        self.label_45.setObjectName(u"label_45")
+
+        self.gridLayout_9.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.diskframe)
+        self.label_95.setObjectName(u"label_95")
+
+        self.gridLayout_9.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.diskframe)
+        self.label_49.setObjectName(u"label_49")
+
+        self.gridLayout_9.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.diskframe)
+        self.label_44.setObjectName(u"label_44")
+
+        self.gridLayout_9.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.diskframe)
+        self.label_97.setObjectName(u"label_97")
+
+        self.gridLayout_9.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.diskframe)
+        self.label_47.setObjectName(u"label_47")
+
+        self.gridLayout_9.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.diskframe)
+        self.label_50.setObjectName(u"label_50")
+
+        self.gridLayout_9.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.diskframe)
+        self.label_43.setObjectName(u"label_43")
+
+        self.gridLayout_9.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.diskframe)
+        self.label_46.setObjectName(u"label_46")
+
+        self.gridLayout_9.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.gridLayout_9, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.diskframe, 1, 0, 1, 4)
+
+        self.pushButton = QPushButton(self.pc_info_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon19 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.pushButton.setIcon(icon19)
+
+        self.gridLayout_3.addWidget(self.pushButton, 2, 0, 1, 1)
+
+        self.pushButton_3 = QPushButton(self.pc_info_page)
+        self.pushButton_3.setObjectName(u"pushButton_3")
+        self.pushButton_3.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon20 = QIcon(QIcon.fromTheme(u"task"))
+        self.pushButton_3.setIcon(icon20)
+
+        self.gridLayout_3.addWidget(self.pushButton_3, 2, 2, 1, 1)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setFont(font6)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.perfomrncelgrdlayout_2 = QGridLayout()
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.label_125 = QLabel(self.sysinfo)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 0, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.sysinfo)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);\n"
+"border-radius:5px;")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 0, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.sysinfo)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 1, 2, 1, 1)
+
+        self.label_127 = QLabel(self.sysinfo)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 0, 0, 1, 1)
+
+        self.label_126 = QLabel(self.sysinfo)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 2, 1, 1, 1)
+
+        self.label_124 = QLabel(self.sysinfo)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 1, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.sysinfo)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 2, 2, 1, 1)
+
+        self.label_129 = QLabel(self.sysinfo)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 1, 1, 1, 1)
+
+        self.label_128 = QLabel(self.sysinfo)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 2, 0, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.perfomrncelgrdlayout_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.apps_page = QWidget()
+        self.apps_page.setObjectName(u"apps_page")
+        self.label_4 = QLabel(self.apps_page)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(240, 110, 161, 111))
+        self.stackedWidget.addWidget(self.apps_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(3)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"About PAGE ", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"update page ", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Unconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Apps Page", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QHeaderView, QLabel, QLayout, QLineEdit,
+    QMainWindow, QPushButton, QSizePolicy, QSpacerItem,
+    QStackedWidget, QStatusBar, QTableWidget, QTableWidgetItem,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1273, 713)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(15)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto"])
+        font1.setPointSize(12)
+        font1.setBold(True)
+        self.stackedWidget.setFont(font1)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon1 = QIcon()
+        icon1.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon1)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon2 = QIcon()
+        icon2.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon2)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon3 = QIcon()
+        icon3.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon3)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon4 = QIcon()
+        icon4.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon4)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon5 = QIcon()
+        icon5.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon5)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon6)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon7)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon8)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon9)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon10)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon11)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font2 = QFont()
+        font2.setFamilies([u"Arial"])
+        font2.setPointSize(14)
+        self.pcinfo_button.setFont(font2)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon12)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font3 = QFont()
+        font3.setPointSize(14)
+        font3.setBold(True)
+        self.pc_info_page.setFont(font3)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+" font-size: 12px;\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.addprinter_button = QPushButton(self.pc_info_page)
+        self.addprinter_button.setObjectName(u"addprinter_button")
+        self.addprinter_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon13 = QIcon(QIcon.fromTheme(u"printer"))
+        self.addprinter_button.setIcon(icon13)
+
+        self.gridLayout_3.addWidget(self.addprinter_button, 2, 4, 1, 1)
+
+        self.network_layout = QFrame(self.pc_info_page)
+        self.network_layout.setObjectName(u"network_layout")
+        self.network_layout.setStyleSheet(u"")
+        self.network_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.network_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.network_layout)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.wifi_layout = QGridLayout()
+        self.wifi_layout.setObjectName(u"wifi_layout")
+        self.wifi_layout.setHorizontalSpacing(8)
+        self.wifi_layout.setVerticalSpacing(10)
+        self.wifi_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.network_layout)
+        self.label_8.setObjectName(u"label_8")
+
+        self.wifi_layout.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.network_layout)
+        self.label_52.setObjectName(u"label_52")
+
+        self.wifi_layout.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.network_layout)
+        self.label_9.setObjectName(u"label_9")
+
+        self.wifi_layout.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.network_layout)
+        self.label_7.setObjectName(u"label_7")
+
+        self.wifi_layout.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.network_layout)
+        self.label_38.setObjectName(u"label_38")
+
+        self.wifi_layout.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.network_layout)
+        self.label_13.setObjectName(u"label_13")
+
+        self.wifi_layout.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.network_layout)
+        self.label_41.setObjectName(u"label_41")
+
+        self.wifi_layout.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.network_layout)
+        self.label_53.setObjectName(u"label_53")
+
+        self.wifi_layout.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.network_layout)
+        self.label_10.setObjectName(u"label_10")
+
+        self.wifi_layout.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.network_layout)
+        self.label_11.setObjectName(u"label_11")
+
+        self.wifi_layout.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.network_layout)
+        self.label_14.setObjectName(u"label_14")
+
+        self.wifi_layout.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.network_layout)
+        self.label_51.setObjectName(u"label_51")
+
+        self.wifi_layout.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.network_layout)
+        self.label_12.setObjectName(u"label_12")
+
+        self.wifi_layout.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.network_layout)
+        self.label_93.setObjectName(u"label_93")
+        self.label_93.setMinimumSize(QSize(0, 20))
+        self.label_93.setMaximumSize(QSize(16777215, 20))
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setBold(True)
+        self.label_93.setFont(font4)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.wifi_layout.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.network_layout)
+        self.label_40.setObjectName(u"label_40")
+
+        self.wifi_layout.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.network_layout)
+        self.label_37.setObjectName(u"label_37")
+
+        self.wifi_layout.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.network_layout)
+        self.label_39.setObjectName(u"label_39")
+
+        self.wifi_layout.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.network_layout)
+        self.label_100.setObjectName(u"label_100")
+
+        self.wifi_layout.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.network_layout)
+        self.label_101.setObjectName(u"label_101")
+
+        self.wifi_layout.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.wifi_layout, 0, 0, 1, 1)
+
+        self.ethernet_layout = QGridLayout()
+        self.ethernet_layout.setObjectName(u"ethernet_layout")
+        self.ethernet_layout.setHorizontalSpacing(8)
+        self.ethernet_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.network_layout)
+        self.label_88.setObjectName(u"label_88")
+
+        self.ethernet_layout.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.network_layout)
+        self.label_80.setObjectName(u"label_80")
+
+        self.ethernet_layout.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.network_layout)
+        self.label_92.setObjectName(u"label_92")
+
+        self.ethernet_layout.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.network_layout)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 20))
+        self.label_5.setMaximumSize(QSize(16777215, 20))
+        font5 = QFont()
+        font5.setBold(True)
+        self.label_5.setFont(font5)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.ethernet_layout.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.network_layout)
+        self.label_81.setObjectName(u"label_81")
+
+        self.ethernet_layout.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.network_layout)
+        self.label_84.setObjectName(u"label_84")
+
+        self.ethernet_layout.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.network_layout)
+        self.label_91.setObjectName(u"label_91")
+
+        self.ethernet_layout.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.network_layout)
+        self.label_79.setObjectName(u"label_79")
+
+        self.ethernet_layout.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.network_layout)
+        self.label_85.setObjectName(u"label_85")
+
+        self.ethernet_layout.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.network_layout)
+        self.label_87.setObjectName(u"label_87")
+
+        self.ethernet_layout.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.network_layout)
+        self.label_82.setObjectName(u"label_82")
+
+        self.ethernet_layout.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.network_layout)
+        self.label_86.setObjectName(u"label_86")
+
+        self.ethernet_layout.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.network_layout)
+        self.label_78.setObjectName(u"label_78")
+
+        self.ethernet_layout.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.network_layout)
+        self.label_83.setObjectName(u"label_83")
+
+        self.ethernet_layout.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.network_layout)
+        self.label_90.setObjectName(u"label_90")
+
+        self.ethernet_layout.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.network_layout)
+        self.label_89.setObjectName(u"label_89")
+
+        self.ethernet_layout.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.network_layout)
+        self.label_102.setObjectName(u"label_102")
+
+        self.ethernet_layout.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.network_layout)
+        self.label_103.setObjectName(u"label_103")
+
+        self.ethernet_layout.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.network_layout)
+        self.label_77.setObjectName(u"label_77")
+
+        self.ethernet_layout.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.ethernet_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.network_layout, 0, 0, 1, 4)
+
+        self.display_and_display_layout = QFrame(self.pc_info_page)
+        self.display_and_display_layout.setObjectName(u"display_and_display_layout")
+        self.display_and_display_layout.setStyleSheet(u"")
+        self.display_and_display_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.display_and_display_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.display_and_display_layout)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.disk_layout = QGridLayout()
+        self.disk_layout.setObjectName(u"disk_layout")
+        self.disk_layout.setVerticalSpacing(2)
+        self.label_108 = QLabel(self.display_and_display_layout)
+        self.label_108.setObjectName(u"label_108")
+
+        self.disk_layout.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.display_and_display_layout)
+        self.label_22.setObjectName(u"label_22")
+
+        self.disk_layout.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.display_and_display_layout)
+        self.label_21.setObjectName(u"label_21")
+
+        self.disk_layout.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.display_and_display_layout)
+        self.label_16.setObjectName(u"label_16")
+
+        self.disk_layout.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.display_and_display_layout)
+        self.label_104.setObjectName(u"label_104")
+
+        self.disk_layout.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.display_and_display_layout)
+        self.label_23.setObjectName(u"label_23")
+
+        self.disk_layout.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.display_and_display_layout)
+        self.label_109.setObjectName(u"label_109")
+
+        self.disk_layout.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.display_and_display_layout)
+        self.label_105.setObjectName(u"label_105")
+
+        self.disk_layout.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.display_and_display_layout)
+        self.label_18.setObjectName(u"label_18")
+
+        self.disk_layout.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.display_and_display_layout)
+        self.label_33.setObjectName(u"label_33")
+
+        self.disk_layout.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.display_and_display_layout)
+        self.label_19.setObjectName(u"label_19")
+
+        self.disk_layout.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.display_and_display_layout)
+        self.label_107.setObjectName(u"label_107")
+
+        self.disk_layout.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.display_and_display_layout)
+        self.label_106.setObjectName(u"label_106")
+
+        self.disk_layout.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.display_and_display_layout)
+        self.label_20.setObjectName(u"label_20")
+
+        self.disk_layout.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.display_and_display_layout)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 20))
+        self.label_15.setMaximumSize(QSize(16777215, 20))
+        self.label_15.setFont(font5)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.disk_layout.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.disk_layout, 0, 0, 1, 1)
+
+        self.display_layout = QGridLayout()
+        self.display_layout.setObjectName(u"display_layout")
+        self.display_layout.setContentsMargins(-1, 0, -1, -1)
+        self.label_98 = QLabel(self.display_and_display_layout)
+        self.label_98.setObjectName(u"label_98")
+
+        self.display_layout.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.display_and_display_layout)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setMinimumSize(QSize(0, 20))
+        self.label_42.setMaximumSize(QSize(16777215, 20))
+        self.label_42.setFont(font5)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.display_layout.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.display_and_display_layout)
+        self.label_96.setObjectName(u"label_96")
+
+        self.display_layout.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.display_and_display_layout)
+        self.label_48.setObjectName(u"label_48")
+
+        self.display_layout.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.display_and_display_layout)
+        self.label_94.setObjectName(u"label_94")
+
+        self.display_layout.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.display_and_display_layout)
+        self.label_99.setObjectName(u"label_99")
+
+        self.display_layout.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.display_and_display_layout)
+        self.label_45.setObjectName(u"label_45")
+
+        self.display_layout.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.display_and_display_layout)
+        self.label_95.setObjectName(u"label_95")
+
+        self.display_layout.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.display_and_display_layout)
+        self.label_49.setObjectName(u"label_49")
+
+        self.display_layout.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.display_and_display_layout)
+        self.label_44.setObjectName(u"label_44")
+
+        self.display_layout.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.display_and_display_layout)
+        self.label_97.setObjectName(u"label_97")
+
+        self.display_layout.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.display_and_display_layout)
+        self.label_47.setObjectName(u"label_47")
+
+        self.display_layout.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.display_and_display_layout)
+        self.label_50.setObjectName(u"label_50")
+
+        self.display_layout.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.display_and_display_layout)
+        self.label_43.setObjectName(u"label_43")
+
+        self.display_layout.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.display_and_display_layout)
+        self.label_46.setObjectName(u"label_46")
+
+        self.display_layout.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.display_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.display_and_display_layout, 1, 0, 1, 4)
+
+        self.back_home_button = QPushButton(self.pc_info_page)
+        self.back_home_button.setObjectName(u"back_home_button")
+        self.back_home_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon14 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.back_home_button.setIcon(icon14)
+
+        self.gridLayout_3.addWidget(self.back_home_button, 2, 0, 1, 1)
+
+        self.taskmanager_button = QPushButton(self.pc_info_page)
+        self.taskmanager_button.setObjectName(u"taskmanager_button")
+        self.taskmanager_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon15 = QIcon(QIcon.fromTheme(u"task"))
+        self.taskmanager_button.setIcon(icon15)
+
+        self.gridLayout_3.addWidget(self.taskmanager_button, 2, 2, 1, 1)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMinimumSize(QSize(0, 20))
+        self.label_24.setMaximumSize(QSize(16777215, 20))
+        self.label_24.setFont(font5)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.perfomrncelgrdlayout_2 = QGridLayout()
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.label_125 = QLabel(self.sysinfo)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 0, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.sysinfo)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);\n"
+"border-radius:5px;")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 0, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.sysinfo)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 1, 2, 1, 1)
+
+        self.label_127 = QLabel(self.sysinfo)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 0, 0, 1, 1)
+
+        self.label_126 = QLabel(self.sysinfo)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 2, 1, 1, 1)
+
+        self.label_124 = QLabel(self.sysinfo)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 1, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.sysinfo)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 2, 2, 1, 1)
+
+        self.label_129 = QLabel(self.sysinfo)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 1, 1, 1, 1)
+
+        self.label_128 = QLabel(self.sysinfo)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 2, 0, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.perfomrncelgrdlayout_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.coopurl_page = QWidget()
+        self.coopurl_page.setObjectName(u"coopurl_page")
+        self.coopurl_page.setStyleSheet(u"color: rgb(0, 0, 0);")
+        self.gridLayout_8 = QGridLayout(self.coopurl_page)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.searchbarHorintoallayout = QHBoxLayout()
+        self.searchbarHorintoallayout.setObjectName(u"searchbarHorintoallayout")
+        self.searchbarHorintoallayout.setContentsMargins(40, -1, 40, -1)
+        self.coopurl_search_lineedit = QLineEdit(self.coopurl_page)
+        self.coopurl_search_lineedit.setObjectName(u"coopurl_search_lineedit")
+        self.coopurl_search_lineedit.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
+        self.coopurl_search_lineedit.setClearButtonEnabled(True)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_search_lineedit)
+
+        self.coopurl_Search_button = QPushButton(self.coopurl_page)
+        self.coopurl_Search_button.setObjectName(u"coopurl_Search_button")
+        self.coopurl_Search_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon16 = QIcon(QIcon.fromTheme(u"edit-find"))
+        self.coopurl_Search_button.setIcon(icon16)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_Search_button)
+
+
+        self.gridLayout_6.addLayout(self.searchbarHorintoallayout, 0, 0, 1, 1)
+
+        self.coopurl_table = QTableWidget(self.coopurl_page)
+        if (self.coopurl_table.columnCount() < 2):
+            self.coopurl_table.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.coopurl_table.setObjectName(u"coopurl_table")
+
+        self.gridLayout_6.addWidget(self.coopurl_table, 1, 0, 1, 1)
+
+
+        self.gridLayout_8.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.coopurl_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        icon17 = QIcon()
+        icon17.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon17.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_2_button.setIcon(icon17)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        icon18 = QIcon()
+        icon18.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon18.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_2_button.setIcon(icon18)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        icon19 = QIcon()
+        icon19.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon19.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_2_button.setIcon(icon19)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        icon20 = QIcon()
+        icon20.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon20.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_2_button.setIcon(icon20)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        icon21 = QIcon()
+        icon21.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon21.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_2_button.setIcon(icon21)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(2)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy3)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font6 = QFont()
+        font6.setFamilies([u"Roboto Medium"])
+        font6.setPointSize(11)
+        font6.setBold(True)
+        self.home_1_button.setFont(font6)
+        self.home_1_button.setIcon(icon17)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        self.app_1_button.setFont(font1)
+        self.app_1_button.setIcon(icon18)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font1)
+        self.about_1_button.setIcon(icon19)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font1)
+        self.update_1_button.setIcon(icon20)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font1)
+        self.exit_1_button.setIcon(icon21)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(2)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.addprinter_button.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Disconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.back_home_button.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.taskmanager_button.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.coopurl_search_lineedit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search URLS", None))
+        self.coopurl_Search_button.setText("")
+        ___qtablewidgetitem = self.coopurl_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Site Name", None));
+        ___qtablewidgetitem1 = self.coopurl_table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"URL", None));
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QHeaderView, QLabel, QLayout, QLineEdit,
+    QMainWindow, QPushButton, QSizePolicy, QSpacerItem,
+    QStackedWidget, QStatusBar, QTableWidget, QTableWidgetItem,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1273, 713)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(15)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto"])
+        font1.setPointSize(12)
+        font1.setBold(True)
+        self.stackedWidget.setFont(font1)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon1 = QIcon()
+        icon1.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon1)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon2 = QIcon()
+        icon2.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon2)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon3 = QIcon()
+        icon3.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon3)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon4 = QIcon()
+        icon4.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon4)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon5 = QIcon()
+        icon5.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon5)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon6)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon7)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon8)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon9)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon10)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon11)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font2 = QFont()
+        font2.setFamilies([u"Arial"])
+        font2.setPointSize(14)
+        self.pcinfo_button.setFont(font2)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon12)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font3 = QFont()
+        font3.setPointSize(14)
+        font3.setBold(True)
+        self.pc_info_page.setFont(font3)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+" font-size: 12px;\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.addprinter_button = QPushButton(self.pc_info_page)
+        self.addprinter_button.setObjectName(u"addprinter_button")
+        self.addprinter_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon13 = QIcon(QIcon.fromTheme(u"printer"))
+        self.addprinter_button.setIcon(icon13)
+
+        self.gridLayout_3.addWidget(self.addprinter_button, 2, 4, 1, 1)
+
+        self.network_layout = QFrame(self.pc_info_page)
+        self.network_layout.setObjectName(u"network_layout")
+        self.network_layout.setStyleSheet(u"")
+        self.network_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.network_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.network_layout)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.wifi_layout = QGridLayout()
+        self.wifi_layout.setObjectName(u"wifi_layout")
+        self.wifi_layout.setHorizontalSpacing(8)
+        self.wifi_layout.setVerticalSpacing(10)
+        self.wifi_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.network_layout)
+        self.label_8.setObjectName(u"label_8")
+
+        self.wifi_layout.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.network_layout)
+        self.label_52.setObjectName(u"label_52")
+
+        self.wifi_layout.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.network_layout)
+        self.label_9.setObjectName(u"label_9")
+
+        self.wifi_layout.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.network_layout)
+        self.label_7.setObjectName(u"label_7")
+
+        self.wifi_layout.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.network_layout)
+        self.label_38.setObjectName(u"label_38")
+
+        self.wifi_layout.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.network_layout)
+        self.label_13.setObjectName(u"label_13")
+
+        self.wifi_layout.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.network_layout)
+        self.label_41.setObjectName(u"label_41")
+
+        self.wifi_layout.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.network_layout)
+        self.label_53.setObjectName(u"label_53")
+
+        self.wifi_layout.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.network_layout)
+        self.label_10.setObjectName(u"label_10")
+
+        self.wifi_layout.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.network_layout)
+        self.label_11.setObjectName(u"label_11")
+
+        self.wifi_layout.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.network_layout)
+        self.label_14.setObjectName(u"label_14")
+
+        self.wifi_layout.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.network_layout)
+        self.label_51.setObjectName(u"label_51")
+
+        self.wifi_layout.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.network_layout)
+        self.label_12.setObjectName(u"label_12")
+
+        self.wifi_layout.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.network_layout)
+        self.label_93.setObjectName(u"label_93")
+        self.label_93.setMinimumSize(QSize(0, 20))
+        self.label_93.setMaximumSize(QSize(16777215, 20))
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setBold(True)
+        self.label_93.setFont(font4)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.wifi_layout.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.network_layout)
+        self.label_40.setObjectName(u"label_40")
+
+        self.wifi_layout.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.network_layout)
+        self.label_37.setObjectName(u"label_37")
+
+        self.wifi_layout.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.network_layout)
+        self.label_39.setObjectName(u"label_39")
+
+        self.wifi_layout.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.network_layout)
+        self.label_100.setObjectName(u"label_100")
+
+        self.wifi_layout.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.network_layout)
+        self.label_101.setObjectName(u"label_101")
+
+        self.wifi_layout.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.wifi_layout, 0, 0, 1, 1)
+
+        self.ethernet_layout = QGridLayout()
+        self.ethernet_layout.setObjectName(u"ethernet_layout")
+        self.ethernet_layout.setHorizontalSpacing(8)
+        self.ethernet_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.network_layout)
+        self.label_88.setObjectName(u"label_88")
+
+        self.ethernet_layout.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.network_layout)
+        self.label_80.setObjectName(u"label_80")
+
+        self.ethernet_layout.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.network_layout)
+        self.label_92.setObjectName(u"label_92")
+
+        self.ethernet_layout.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.network_layout)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 20))
+        self.label_5.setMaximumSize(QSize(16777215, 20))
+        font5 = QFont()
+        font5.setBold(True)
+        self.label_5.setFont(font5)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.ethernet_layout.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.network_layout)
+        self.label_81.setObjectName(u"label_81")
+
+        self.ethernet_layout.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.network_layout)
+        self.label_84.setObjectName(u"label_84")
+
+        self.ethernet_layout.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.network_layout)
+        self.label_91.setObjectName(u"label_91")
+
+        self.ethernet_layout.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.network_layout)
+        self.label_79.setObjectName(u"label_79")
+
+        self.ethernet_layout.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.network_layout)
+        self.label_85.setObjectName(u"label_85")
+
+        self.ethernet_layout.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.network_layout)
+        self.label_87.setObjectName(u"label_87")
+
+        self.ethernet_layout.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.network_layout)
+        self.label_82.setObjectName(u"label_82")
+
+        self.ethernet_layout.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.network_layout)
+        self.label_86.setObjectName(u"label_86")
+
+        self.ethernet_layout.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.network_layout)
+        self.label_78.setObjectName(u"label_78")
+
+        self.ethernet_layout.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.network_layout)
+        self.label_83.setObjectName(u"label_83")
+
+        self.ethernet_layout.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.network_layout)
+        self.label_90.setObjectName(u"label_90")
+
+        self.ethernet_layout.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.network_layout)
+        self.label_89.setObjectName(u"label_89")
+
+        self.ethernet_layout.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.network_layout)
+        self.label_102.setObjectName(u"label_102")
+
+        self.ethernet_layout.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.network_layout)
+        self.label_103.setObjectName(u"label_103")
+
+        self.ethernet_layout.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.network_layout)
+        self.label_77.setObjectName(u"label_77")
+
+        self.ethernet_layout.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.ethernet_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.network_layout, 0, 0, 1, 4)
+
+        self.display_and_display_layout = QFrame(self.pc_info_page)
+        self.display_and_display_layout.setObjectName(u"display_and_display_layout")
+        self.display_and_display_layout.setStyleSheet(u"")
+        self.display_and_display_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.display_and_display_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.display_and_display_layout)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.disk_layout = QGridLayout()
+        self.disk_layout.setObjectName(u"disk_layout")
+        self.disk_layout.setVerticalSpacing(2)
+        self.label_108 = QLabel(self.display_and_display_layout)
+        self.label_108.setObjectName(u"label_108")
+
+        self.disk_layout.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.display_and_display_layout)
+        self.label_22.setObjectName(u"label_22")
+
+        self.disk_layout.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.display_and_display_layout)
+        self.label_21.setObjectName(u"label_21")
+
+        self.disk_layout.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.display_and_display_layout)
+        self.label_16.setObjectName(u"label_16")
+
+        self.disk_layout.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.display_and_display_layout)
+        self.label_104.setObjectName(u"label_104")
+
+        self.disk_layout.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.display_and_display_layout)
+        self.label_23.setObjectName(u"label_23")
+
+        self.disk_layout.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.display_and_display_layout)
+        self.label_109.setObjectName(u"label_109")
+
+        self.disk_layout.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.display_and_display_layout)
+        self.label_105.setObjectName(u"label_105")
+
+        self.disk_layout.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.display_and_display_layout)
+        self.label_18.setObjectName(u"label_18")
+
+        self.disk_layout.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.display_and_display_layout)
+        self.label_33.setObjectName(u"label_33")
+
+        self.disk_layout.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.display_and_display_layout)
+        self.label_19.setObjectName(u"label_19")
+
+        self.disk_layout.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.display_and_display_layout)
+        self.label_107.setObjectName(u"label_107")
+
+        self.disk_layout.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.display_and_display_layout)
+        self.label_106.setObjectName(u"label_106")
+
+        self.disk_layout.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.display_and_display_layout)
+        self.label_20.setObjectName(u"label_20")
+
+        self.disk_layout.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.display_and_display_layout)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 20))
+        self.label_15.setMaximumSize(QSize(16777215, 20))
+        self.label_15.setFont(font5)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.disk_layout.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.disk_layout, 0, 0, 1, 1)
+
+        self.display_layout = QGridLayout()
+        self.display_layout.setObjectName(u"display_layout")
+        self.display_layout.setContentsMargins(-1, 0, -1, -1)
+        self.label_98 = QLabel(self.display_and_display_layout)
+        self.label_98.setObjectName(u"label_98")
+
+        self.display_layout.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.display_and_display_layout)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setMinimumSize(QSize(0, 20))
+        self.label_42.setMaximumSize(QSize(16777215, 20))
+        self.label_42.setFont(font5)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.display_layout.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.display_and_display_layout)
+        self.label_96.setObjectName(u"label_96")
+
+        self.display_layout.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.display_and_display_layout)
+        self.label_48.setObjectName(u"label_48")
+
+        self.display_layout.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.display_and_display_layout)
+        self.label_94.setObjectName(u"label_94")
+
+        self.display_layout.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.display_and_display_layout)
+        self.label_99.setObjectName(u"label_99")
+
+        self.display_layout.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.display_and_display_layout)
+        self.label_45.setObjectName(u"label_45")
+
+        self.display_layout.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.display_and_display_layout)
+        self.label_95.setObjectName(u"label_95")
+
+        self.display_layout.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.display_and_display_layout)
+        self.label_49.setObjectName(u"label_49")
+
+        self.display_layout.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.display_and_display_layout)
+        self.label_44.setObjectName(u"label_44")
+
+        self.display_layout.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.display_and_display_layout)
+        self.label_97.setObjectName(u"label_97")
+
+        self.display_layout.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.display_and_display_layout)
+        self.label_47.setObjectName(u"label_47")
+
+        self.display_layout.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.display_and_display_layout)
+        self.label_50.setObjectName(u"label_50")
+
+        self.display_layout.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.display_and_display_layout)
+        self.label_43.setObjectName(u"label_43")
+
+        self.display_layout.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.display_and_display_layout)
+        self.label_46.setObjectName(u"label_46")
+
+        self.display_layout.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.display_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.display_and_display_layout, 1, 0, 1, 4)
+
+        self.back_home_button = QPushButton(self.pc_info_page)
+        self.back_home_button.setObjectName(u"back_home_button")
+        self.back_home_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon14 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.back_home_button.setIcon(icon14)
+
+        self.gridLayout_3.addWidget(self.back_home_button, 2, 0, 1, 1)
+
+        self.taskmanager_button = QPushButton(self.pc_info_page)
+        self.taskmanager_button.setObjectName(u"taskmanager_button")
+        self.taskmanager_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon15 = QIcon(QIcon.fromTheme(u"task"))
+        self.taskmanager_button.setIcon(icon15)
+
+        self.gridLayout_3.addWidget(self.taskmanager_button, 2, 2, 1, 1)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMinimumSize(QSize(0, 20))
+        self.label_24.setMaximumSize(QSize(16777215, 20))
+        self.label_24.setFont(font5)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.perfomrncelgrdlayout_2 = QGridLayout()
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.label_125 = QLabel(self.sysinfo)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 0, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.sysinfo)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);\n"
+"border-radius:5px;")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 0, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.sysinfo)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 1, 2, 1, 1)
+
+        self.label_127 = QLabel(self.sysinfo)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 0, 0, 1, 1)
+
+        self.label_126 = QLabel(self.sysinfo)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 2, 1, 1, 1)
+
+        self.label_124 = QLabel(self.sysinfo)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 1, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.sysinfo)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 2, 2, 1, 1)
+
+        self.label_129 = QLabel(self.sysinfo)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 1, 1, 1, 1)
+
+        self.label_128 = QLabel(self.sysinfo)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 2, 0, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.perfomrncelgrdlayout_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.coopurl_page = QWidget()
+        self.coopurl_page.setObjectName(u"coopurl_page")
+        self.coopurl_page.setStyleSheet(u"color: rgb(0, 0, 0);")
+        self.gridLayout_8 = QGridLayout(self.coopurl_page)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.searchbarHorintoallayout = QHBoxLayout()
+        self.searchbarHorintoallayout.setObjectName(u"searchbarHorintoallayout")
+        self.searchbarHorintoallayout.setContentsMargins(40, -1, 40, -1)
+        self.coopurl_search_lineedit = QLineEdit(self.coopurl_page)
+        self.coopurl_search_lineedit.setObjectName(u"coopurl_search_lineedit")
+        self.coopurl_search_lineedit.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
+        self.coopurl_search_lineedit.setClearButtonEnabled(True)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_search_lineedit)
+
+        self.coopurl_Search_button = QPushButton(self.coopurl_page)
+        self.coopurl_Search_button.setObjectName(u"coopurl_Search_button")
+        self.coopurl_Search_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon16 = QIcon(QIcon.fromTheme(u"edit-find"))
+        self.coopurl_Search_button.setIcon(icon16)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_Search_button)
+
+
+        self.gridLayout_6.addLayout(self.searchbarHorintoallayout, 0, 0, 1, 1)
+
+        self.coopurl_table = QTableWidget(self.coopurl_page)
+        if (self.coopurl_table.columnCount() < 2):
+            self.coopurl_table.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.coopurl_table.setObjectName(u"coopurl_table")
+
+        self.gridLayout_6.addWidget(self.coopurl_table, 1, 0, 1, 1)
+
+
+        self.gridLayout_8.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.coopurl_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        icon17 = QIcon()
+        icon17.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon17.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_2_button.setIcon(icon17)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        icon18 = QIcon()
+        icon18.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon18.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_2_button.setIcon(icon18)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        icon19 = QIcon()
+        icon19.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon19.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_2_button.setIcon(icon19)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        icon20 = QIcon()
+        icon20.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon20.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_2_button.setIcon(icon20)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        icon21 = QIcon()
+        icon21.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon21.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_2_button.setIcon(icon21)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(2)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy3)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font6 = QFont()
+        font6.setFamilies([u"Roboto Medium"])
+        font6.setPointSize(11)
+        font6.setBold(True)
+        self.home_1_button.setFont(font6)
+        self.home_1_button.setIcon(icon17)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        self.app_1_button.setFont(font1)
+        self.app_1_button.setIcon(icon18)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font1)
+        self.about_1_button.setIcon(icon19)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font1)
+        self.update_1_button.setIcon(icon20)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font1)
+        self.exit_1_button.setIcon(icon21)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(2)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.addprinter_button.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Disconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.back_home_button.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.taskmanager_button.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.coopurl_search_lineedit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search URLS", None))
+        self.coopurl_Search_button.setText("")
+        ___qtablewidgetitem = self.coopurl_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Site Name", None));
+        ___qtablewidgetitem1 = self.coopurl_table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"URL", None));
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QHeaderView, QLabel, QLayout, QLineEdit,
+    QMainWindow, QPushButton, QSizePolicy, QSpacerItem,
+    QStackedWidget, QStatusBar, QTableWidget, QTableWidgetItem,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1372, 693)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(15)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto"])
+        font1.setPointSize(12)
+        font1.setBold(True)
+        self.stackedWidget.setFont(font1)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon1 = QIcon()
+        icon1.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon1)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon2 = QIcon()
+        icon2.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon2)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon3 = QIcon()
+        icon3.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon3)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon4 = QIcon()
+        icon4.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon4)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon5 = QIcon()
+        icon5.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon5)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon6)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon7)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon8)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon9)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon10)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon11)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font2 = QFont()
+        font2.setFamilies([u"Arial"])
+        font2.setPointSize(14)
+        self.pcinfo_button.setFont(font2)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon12)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font3 = QFont()
+        font3.setPointSize(14)
+        font3.setBold(True)
+        self.pc_info_page.setFont(font3)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+" font-size: 12px;\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.addprinter_button = QPushButton(self.pc_info_page)
+        self.addprinter_button.setObjectName(u"addprinter_button")
+        self.addprinter_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon13 = QIcon(QIcon.fromTheme(u"printer"))
+        self.addprinter_button.setIcon(icon13)
+
+        self.gridLayout_3.addWidget(self.addprinter_button, 2, 4, 1, 1)
+
+        self.network_layout = QFrame(self.pc_info_page)
+        self.network_layout.setObjectName(u"network_layout")
+        self.network_layout.setStyleSheet(u"")
+        self.network_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.network_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.network_layout)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.wifi_layout = QGridLayout()
+        self.wifi_layout.setObjectName(u"wifi_layout")
+        self.wifi_layout.setHorizontalSpacing(8)
+        self.wifi_layout.setVerticalSpacing(6)
+        self.wifi_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.network_layout)
+        self.label_8.setObjectName(u"label_8")
+
+        self.wifi_layout.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.network_layout)
+        self.label_52.setObjectName(u"label_52")
+
+        self.wifi_layout.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.network_layout)
+        self.label_9.setObjectName(u"label_9")
+
+        self.wifi_layout.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.network_layout)
+        self.label_7.setObjectName(u"label_7")
+
+        self.wifi_layout.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.network_layout)
+        self.label_38.setObjectName(u"label_38")
+
+        self.wifi_layout.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.network_layout)
+        self.label_13.setObjectName(u"label_13")
+
+        self.wifi_layout.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.network_layout)
+        self.label_41.setObjectName(u"label_41")
+
+        self.wifi_layout.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.network_layout)
+        self.label_53.setObjectName(u"label_53")
+
+        self.wifi_layout.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.network_layout)
+        self.label_10.setObjectName(u"label_10")
+
+        self.wifi_layout.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.network_layout)
+        self.label_11.setObjectName(u"label_11")
+
+        self.wifi_layout.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.network_layout)
+        self.label_14.setObjectName(u"label_14")
+
+        self.wifi_layout.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.network_layout)
+        self.label_51.setObjectName(u"label_51")
+
+        self.wifi_layout.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.network_layout)
+        self.label_12.setObjectName(u"label_12")
+
+        self.wifi_layout.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.network_layout)
+        self.label_93.setObjectName(u"label_93")
+        self.label_93.setMinimumSize(QSize(0, 20))
+        self.label_93.setMaximumSize(QSize(16777215, 20))
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setBold(True)
+        self.label_93.setFont(font4)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.wifi_layout.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.network_layout)
+        self.label_40.setObjectName(u"label_40")
+
+        self.wifi_layout.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.network_layout)
+        self.label_37.setObjectName(u"label_37")
+
+        self.wifi_layout.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.network_layout)
+        self.label_39.setObjectName(u"label_39")
+
+        self.wifi_layout.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.network_layout)
+        self.label_100.setObjectName(u"label_100")
+
+        self.wifi_layout.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.network_layout)
+        self.label_101.setObjectName(u"label_101")
+
+        self.wifi_layout.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.wifi_layout, 0, 0, 1, 1)
+
+        self.ethernet_layout = QGridLayout()
+        self.ethernet_layout.setObjectName(u"ethernet_layout")
+        self.ethernet_layout.setHorizontalSpacing(8)
+        self.ethernet_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.network_layout)
+        self.label_88.setObjectName(u"label_88")
+
+        self.ethernet_layout.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.network_layout)
+        self.label_80.setObjectName(u"label_80")
+
+        self.ethernet_layout.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.network_layout)
+        self.label_92.setObjectName(u"label_92")
+
+        self.ethernet_layout.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.network_layout)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 20))
+        self.label_5.setMaximumSize(QSize(16777215, 20))
+        font5 = QFont()
+        font5.setBold(True)
+        self.label_5.setFont(font5)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.ethernet_layout.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.network_layout)
+        self.label_81.setObjectName(u"label_81")
+
+        self.ethernet_layout.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.network_layout)
+        self.label_84.setObjectName(u"label_84")
+
+        self.ethernet_layout.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.network_layout)
+        self.label_91.setObjectName(u"label_91")
+
+        self.ethernet_layout.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.network_layout)
+        self.label_79.setObjectName(u"label_79")
+
+        self.ethernet_layout.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.network_layout)
+        self.label_85.setObjectName(u"label_85")
+
+        self.ethernet_layout.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.network_layout)
+        self.label_87.setObjectName(u"label_87")
+
+        self.ethernet_layout.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.network_layout)
+        self.label_82.setObjectName(u"label_82")
+
+        self.ethernet_layout.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.network_layout)
+        self.label_86.setObjectName(u"label_86")
+
+        self.ethernet_layout.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.network_layout)
+        self.label_78.setObjectName(u"label_78")
+
+        self.ethernet_layout.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.network_layout)
+        self.label_83.setObjectName(u"label_83")
+
+        self.ethernet_layout.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.network_layout)
+        self.label_90.setObjectName(u"label_90")
+
+        self.ethernet_layout.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.network_layout)
+        self.label_89.setObjectName(u"label_89")
+
+        self.ethernet_layout.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.network_layout)
+        self.label_102.setObjectName(u"label_102")
+
+        self.ethernet_layout.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.network_layout)
+        self.label_103.setObjectName(u"label_103")
+
+        self.ethernet_layout.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.network_layout)
+        self.label_77.setObjectName(u"label_77")
+
+        self.ethernet_layout.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.ethernet_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.network_layout, 0, 0, 1, 4)
+
+        self.disk_and_display_layout = QFrame(self.pc_info_page)
+        self.disk_and_display_layout.setObjectName(u"disk_and_display_layout")
+        self.disk_and_display_layout.setStyleSheet(u"")
+        self.disk_and_display_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.disk_and_display_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.disk_and_display_layout)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.disk_layout = QGridLayout()
+        self.disk_layout.setObjectName(u"disk_layout")
+        self.disk_layout.setHorizontalSpacing(8)
+        self.disk_layout.setVerticalSpacing(6)
+        self.disk_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_108 = QLabel(self.disk_and_display_layout)
+        self.label_108.setObjectName(u"label_108")
+
+        self.disk_layout.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.disk_and_display_layout)
+        self.label_22.setObjectName(u"label_22")
+
+        self.disk_layout.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.disk_and_display_layout)
+        self.label_21.setObjectName(u"label_21")
+
+        self.disk_layout.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.disk_and_display_layout)
+        self.label_16.setObjectName(u"label_16")
+
+        self.disk_layout.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.disk_and_display_layout)
+        self.label_104.setObjectName(u"label_104")
+
+        self.disk_layout.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.disk_and_display_layout)
+        self.label_23.setObjectName(u"label_23")
+
+        self.disk_layout.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.disk_and_display_layout)
+        self.label_109.setObjectName(u"label_109")
+
+        self.disk_layout.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.disk_and_display_layout)
+        self.label_105.setObjectName(u"label_105")
+
+        self.disk_layout.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.disk_and_display_layout)
+        self.label_18.setObjectName(u"label_18")
+
+        self.disk_layout.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.disk_and_display_layout)
+        self.label_33.setObjectName(u"label_33")
+
+        self.disk_layout.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.disk_and_display_layout)
+        self.label_19.setObjectName(u"label_19")
+
+        self.disk_layout.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.disk_and_display_layout)
+        self.label_107.setObjectName(u"label_107")
+
+        self.disk_layout.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.disk_and_display_layout)
+        self.label_106.setObjectName(u"label_106")
+
+        self.disk_layout.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.disk_and_display_layout)
+        self.label_20.setObjectName(u"label_20")
+
+        self.disk_layout.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.disk_and_display_layout)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 20))
+        self.label_15.setMaximumSize(QSize(16777215, 20))
+        self.label_15.setFont(font5)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.disk_layout.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.disk_layout, 0, 0, 1, 1)
+
+        self.display_layout = QGridLayout()
+        self.display_layout.setObjectName(u"display_layout")
+        self.display_layout.setHorizontalSpacing(8)
+        self.display_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_98 = QLabel(self.disk_and_display_layout)
+        self.label_98.setObjectName(u"label_98")
+
+        self.display_layout.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.disk_and_display_layout)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setMinimumSize(QSize(0, 20))
+        self.label_42.setMaximumSize(QSize(16777215, 20))
+        self.label_42.setFont(font5)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.display_layout.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.disk_and_display_layout)
+        self.label_96.setObjectName(u"label_96")
+
+        self.display_layout.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.disk_and_display_layout)
+        self.label_48.setObjectName(u"label_48")
+
+        self.display_layout.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.disk_and_display_layout)
+        self.label_94.setObjectName(u"label_94")
+
+        self.display_layout.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.disk_and_display_layout)
+        self.label_99.setObjectName(u"label_99")
+
+        self.display_layout.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.disk_and_display_layout)
+        self.label_45.setObjectName(u"label_45")
+
+        self.display_layout.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.disk_and_display_layout)
+        self.label_95.setObjectName(u"label_95")
+
+        self.display_layout.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.disk_and_display_layout)
+        self.label_49.setObjectName(u"label_49")
+
+        self.display_layout.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.disk_and_display_layout)
+        self.label_44.setObjectName(u"label_44")
+
+        self.display_layout.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.disk_and_display_layout)
+        self.label_97.setObjectName(u"label_97")
+
+        self.display_layout.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.disk_and_display_layout)
+        self.label_47.setObjectName(u"label_47")
+
+        self.display_layout.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.disk_and_display_layout)
+        self.label_50.setObjectName(u"label_50")
+
+        self.display_layout.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.disk_and_display_layout)
+        self.label_43.setObjectName(u"label_43")
+
+        self.display_layout.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.disk_and_display_layout)
+        self.label_46.setObjectName(u"label_46")
+
+        self.display_layout.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.display_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.disk_and_display_layout, 1, 0, 1, 4)
+
+        self.back_home_button = QPushButton(self.pc_info_page)
+        self.back_home_button.setObjectName(u"back_home_button")
+        self.back_home_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon14 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.back_home_button.setIcon(icon14)
+
+        self.gridLayout_3.addWidget(self.back_home_button, 2, 0, 1, 1)
+
+        self.taskmanager_button = QPushButton(self.pc_info_page)
+        self.taskmanager_button.setObjectName(u"taskmanager_button")
+        self.taskmanager_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon15 = QIcon(QIcon.fromTheme(u"task"))
+        self.taskmanager_button.setIcon(icon15)
+
+        self.gridLayout_3.addWidget(self.taskmanager_button, 2, 2, 1, 1)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMinimumSize(QSize(0, 20))
+        self.label_24.setMaximumSize(QSize(16777215, 20))
+        self.label_24.setFont(font5)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.perfomrncelgrdlayout_2 = QGridLayout()
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.label_125 = QLabel(self.sysinfo)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 0, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.sysinfo)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);\n"
+"border-radius:5px;")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 0, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.sysinfo)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 1, 2, 1, 1)
+
+        self.label_127 = QLabel(self.sysinfo)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 0, 0, 1, 1)
+
+        self.label_126 = QLabel(self.sysinfo)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 2, 1, 1, 1)
+
+        self.label_124 = QLabel(self.sysinfo)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 1, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.sysinfo)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 2, 2, 1, 1)
+
+        self.label_129 = QLabel(self.sysinfo)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 1, 1, 1, 1)
+
+        self.label_128 = QLabel(self.sysinfo)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 2, 0, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.perfomrncelgrdlayout_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.coopurl_page = QWidget()
+        self.coopurl_page.setObjectName(u"coopurl_page")
+        self.coopurl_page.setStyleSheet(u"color: rgb(0, 0, 0);")
+        self.gridLayout_8 = QGridLayout(self.coopurl_page)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.searchbarHorintoallayout = QHBoxLayout()
+        self.searchbarHorintoallayout.setObjectName(u"searchbarHorintoallayout")
+        self.searchbarHorintoallayout.setContentsMargins(40, -1, 40, -1)
+        self.coopurl_search_lineedit = QLineEdit(self.coopurl_page)
+        self.coopurl_search_lineedit.setObjectName(u"coopurl_search_lineedit")
+        self.coopurl_search_lineedit.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
+        self.coopurl_search_lineedit.setClearButtonEnabled(True)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_search_lineedit)
+
+        self.coopurl_Search_button = QPushButton(self.coopurl_page)
+        self.coopurl_Search_button.setObjectName(u"coopurl_Search_button")
+        self.coopurl_Search_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon16 = QIcon(QIcon.fromTheme(u"edit-find"))
+        self.coopurl_Search_button.setIcon(icon16)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_Search_button)
+
+
+        self.gridLayout_6.addLayout(self.searchbarHorintoallayout, 0, 0, 1, 1)
+
+        self.coopurl_table = QTableWidget(self.coopurl_page)
+        if (self.coopurl_table.columnCount() < 2):
+            self.coopurl_table.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.coopurl_table.setObjectName(u"coopurl_table")
+
+        self.gridLayout_6.addWidget(self.coopurl_table, 1, 0, 1, 1)
+
+
+        self.gridLayout_8.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.coopurl_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        icon17 = QIcon()
+        icon17.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon17.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_2_button.setIcon(icon17)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        icon18 = QIcon()
+        icon18.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon18.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_2_button.setIcon(icon18)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        icon19 = QIcon()
+        icon19.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon19.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_2_button.setIcon(icon19)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        icon20 = QIcon()
+        icon20.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon20.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_2_button.setIcon(icon20)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        icon21 = QIcon()
+        icon21.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon21.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_2_button.setIcon(icon21)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(2)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy3)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font6 = QFont()
+        font6.setFamilies([u"Roboto Medium"])
+        font6.setPointSize(11)
+        font6.setBold(True)
+        self.home_1_button.setFont(font6)
+        self.home_1_button.setIcon(icon17)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        self.app_1_button.setFont(font1)
+        self.app_1_button.setIcon(icon18)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font1)
+        self.about_1_button.setIcon(icon19)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font1)
+        self.update_1_button.setIcon(icon20)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font1)
+        self.exit_1_button.setIcon(icon21)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(1)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.addprinter_button.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Disconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.back_home_button.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.taskmanager_button.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.coopurl_search_lineedit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search URLS", None))
+        self.coopurl_Search_button.setText("")
+        ___qtablewidgetitem = self.coopurl_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Site Name", None));
+        ___qtablewidgetitem1 = self.coopurl_table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"URL", None));
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+    # retranslateUi
+
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'coopDesk.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.0
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QHeaderView, QLabel, QLayout, QLineEdit,
+    QMainWindow, QPushButton, QSizePolicy, QSpacerItem,
+    QStackedWidget, QStatusBar, QTableWidget, QTableWidgetItem,
+    QVBoxLayout, QWidget)
+import resource_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1364, 832)
+        MainWindow.setMinimumSize(QSize(80, 80))
+        font = QFont()
+        font.setPointSize(11)
+        MainWindow.setFont(font)
+        MainWindow.setStyleSheet(u"background-color: rgb(245, 250, 254);")
+        MainWindow.setIconSize(QSize(32, 32))
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.main_menu = QWidget(self.centralwidget)
+        self.main_menu.setObjectName(u"main_menu")
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy.setHorizontalStretch(15)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.main_menu.sizePolicy().hasHeightForWidth())
+        self.main_menu.setSizePolicy(sizePolicy)
+        self.main_menu.setStyleSheet(u"QToolTip {\n"
+"    background:white;\n"
+"    color: #00AEEF; \n"
+"    border: 3px solid #00AEEF;\n"
+"    font-size: 16pt;\n"
+"    font-family: Arial;\n"
+"    padding: 5px;\n"
+"    border-radius:3px\n"
+"}")
+        self.verticalLayout_5 = QVBoxLayout(self.main_menu)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.pushButton_19 = QPushButton(self.main_menu)
+        self.pushButton_19.setObjectName(u"pushButton_19")
+        self.pushButton_19.setStyleSheet(u"QPushButton{\n"
+"border:none;\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/images/menu_icon_blue.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/images/menu_icon_blue_inverted.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.pushButton_19.setIcon(icon)
+        self.pushButton_19.setIconSize(QSize(24, 24))
+        self.pushButton_19.setCheckable(True)
+
+        self.horizontalLayout_5.addWidget(self.pushButton_19)
+
+        self.horizontalSpacer = QSpacerItem(668, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_5)
+
+        self.stackedWidget = QStackedWidget(self.main_menu)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        font1 = QFont()
+        font1.setFamilies([u"Roboto"])
+        font1.setPointSize(12)
+        font1.setBold(True)
+        self.stackedWidget.setFont(font1)
+        self.stackedWidget.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+        self.home_page = QWidget()
+        self.home_page.setObjectName(u"home_page")
+        self.home_page.setStyleSheet(u"QPushButton{\n"
+"  background:none;\n"
+"  border: none;\n"
+"\n"
+"\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.home_page)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setSizeConstraint(QLayout.SizeConstraint.SetDefaultConstraint)
+        self.gridLayout_2.setHorizontalSpacing(20)
+        self.gridLayout_2.setVerticalSpacing(5)
+        self.gridLayout_2.setContentsMargins(10, 10, 10, 10)
+        self.cashmanage_button = QPushButton(self.home_page)
+        self.cashmanage_button.setObjectName(u"cashmanage_button")
+        icon1 = QIcon()
+        icon1.addFile(u":/homeicons/teller.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.cashmanage_button.setIcon(icon1)
+        self.cashmanage_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.cashmanage_button, 3, 1, 1, 1)
+
+        self.about_coop_button = QPushButton(self.home_page)
+        self.about_coop_button.setObjectName(u"about_coop_button")
+        icon2 = QIcon()
+        icon2.addFile(u":/homeicons/about_coop.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.about_coop_button.setIcon(icon2)
+        self.about_coop_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.about_coop_button, 3, 2, 1, 1)
+
+        self.alhuda_button = QPushButton(self.home_page)
+        self.alhuda_button.setObjectName(u"alhuda_button")
+        icon3 = QIcon()
+        icon3.addFile(u":/homeicons/alhuda.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.alhuda_button.setIcon(icon3)
+        self.alhuda_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.alhuda_button, 2, 1, 1, 1)
+
+        self.phonebook_button = QPushButton(self.home_page)
+        self.phonebook_button.setObjectName(u"phonebook_button")
+        icon4 = QIcon()
+        icon4.addFile(u":/homeicons/phonebook.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.phonebook_button.setIcon(icon4)
+        self.phonebook_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.phonebook_button, 1, 2, 1, 1)
+
+        self.coopurl_button = QPushButton(self.home_page)
+        self.coopurl_button.setObjectName(u"coopurl_button")
+        icon5 = QIcon()
+        icon5.addFile(u":/homeicons/coopurl.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopurl_button.setIcon(icon5)
+        self.coopurl_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopurl_button, 0, 1, 1, 1)
+
+        self.michu_button = QPushButton(self.home_page)
+        self.michu_button.setObjectName(u"michu_button")
+        icon6 = QIcon()
+        icon6.addFile(u":/homeicons/michu.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.michu_button.setIcon(icon6)
+        self.michu_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.michu_button, 0, 2, 1, 1)
+
+        self.coopay_button = QPushButton(self.home_page)
+        self.coopay_button.setObjectName(u"coopay_button")
+        icon7 = QIcon()
+        icon7.addFile(u":/homeicons/coopay.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopay_button.setIcon(icon7)
+        self.coopay_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopay_button, 2, 2, 1, 1)
+
+        self.conventional_button = QPushButton(self.home_page)
+        self.conventional_button.setObjectName(u"conventional_button")
+        icon8 = QIcon()
+        icon8.addFile(u":/homeicons/conventinal_products.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.conventional_button.setIcon(icon8)
+        self.conventional_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.conventional_button, 2, 0, 1, 1)
+
+        self.coopapp_button = QPushButton(self.home_page)
+        self.coopapp_button.setObjectName(u"coopapp_button")
+        icon9 = QIcon()
+        icon9.addFile(u":/homeicons/coopapp.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.coopapp_button.setIcon(icon9)
+        self.coopapp_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.coopapp_button, 3, 0, 1, 1)
+
+        self.remittance_button = QPushButton(self.home_page)
+        self.remittance_button.setObjectName(u"remittance_button")
+        icon10 = QIcon()
+        icon10.addFile(u":/homeicons/remittance.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.remittance_button.setIcon(icon10)
+        self.remittance_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.remittance_button, 1, 0, 1, 1)
+
+        self.atm_button = QPushButton(self.home_page)
+        self.atm_button.setObjectName(u"atm_button")
+        icon11 = QIcon()
+        icon11.addFile(u":/homeicons/atm.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.atm_button.setIcon(icon11)
+        self.atm_button.setIconSize(QSize(128, 128))
+
+        self.gridLayout_2.addWidget(self.atm_button, 1, 1, 1, 1)
+
+        self.pcinfo_button = QPushButton(self.home_page)
+        self.pcinfo_button.setObjectName(u"pcinfo_button")
+        font2 = QFont()
+        font2.setFamilies([u"Arial"])
+        font2.setPointSize(14)
+        self.pcinfo_button.setFont(font2)
+        self.pcinfo_button.setToolTipDuration(-4)
+        self.pcinfo_button.setStyleSheet(u"")
+        icon12 = QIcon()
+        icon12.addFile(u":/homeicons/pcinfo.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pcinfo_button.setIcon(icon12)
+        self.pcinfo_button.setIconSize(QSize(128, 128))
+        self.pcinfo_button.setCheckable(True)
+
+        self.gridLayout_2.addWidget(self.pcinfo_button, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.home_page)
+        self.pc_info_page = QWidget()
+        self.pc_info_page.setObjectName(u"pc_info_page")
+        font3 = QFont()
+        font3.setPointSize(14)
+        font3.setBold(True)
+        self.pc_info_page.setFont(font3)
+        self.pc_info_page.setStyleSheet(u"QWidget{color: #000000;\n"
+"text-size: 13px bold;}\n"
+"\n"
+"QFrame {\n"
+"    background-color: white; /* Card background color */\n"
+"    border: 1px solid #ddd; /* Border similar to Bootstrap */\n"
+"    border-radius: 5px; /* Rounded corners */\n"
+" \n"
+"}\n"
+"QLabel {\n"
+"    qproperty-alignment: 'AlignHCenter | AlignVCenter';\n"
+" font-size: 12px;\n"
+"}")
+        self.gridLayout_3 = QGridLayout(self.pc_info_page)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.addprinter_button = QPushButton(self.pc_info_page)
+        self.addprinter_button.setObjectName(u"addprinter_button")
+        self.addprinter_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon13 = QIcon(QIcon.fromTheme(u"printer"))
+        self.addprinter_button.setIcon(icon13)
+
+        self.gridLayout_3.addWidget(self.addprinter_button, 2, 4, 1, 1)
+
+        self.network_layout = QFrame(self.pc_info_page)
+        self.network_layout.setObjectName(u"network_layout")
+        self.network_layout.setStyleSheet(u"")
+        self.network_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.network_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_4 = QGridLayout(self.network_layout)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setHorizontalSpacing(15)
+        self.gridLayout_4.setVerticalSpacing(1)
+        self.gridLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.wifi_layout = QGridLayout()
+        self.wifi_layout.setObjectName(u"wifi_layout")
+        self.wifi_layout.setHorizontalSpacing(8)
+        self.wifi_layout.setVerticalSpacing(6)
+        self.wifi_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_8 = QLabel(self.network_layout)
+        self.label_8.setObjectName(u"label_8")
+
+        self.wifi_layout.addWidget(self.label_8, 2, 1, 1, 1)
+
+        self.label_52 = QLabel(self.network_layout)
+        self.label_52.setObjectName(u"label_52")
+
+        self.wifi_layout.addWidget(self.label_52, 8, 0, 1, 1)
+
+        self.label_9 = QLabel(self.network_layout)
+        self.label_9.setObjectName(u"label_9")
+
+        self.wifi_layout.addWidget(self.label_9, 3, 0, 1, 1)
+
+        self.label_7 = QLabel(self.network_layout)
+        self.label_7.setObjectName(u"label_7")
+
+        self.wifi_layout.addWidget(self.label_7, 2, 0, 1, 1)
+
+        self.label_38 = QLabel(self.network_layout)
+        self.label_38.setObjectName(u"label_38")
+
+        self.wifi_layout.addWidget(self.label_38, 5, 1, 1, 1)
+
+        self.label_13 = QLabel(self.network_layout)
+        self.label_13.setObjectName(u"label_13")
+
+        self.wifi_layout.addWidget(self.label_13, 1, 0, 1, 1)
+
+        self.label_41 = QLabel(self.network_layout)
+        self.label_41.setObjectName(u"label_41")
+
+        self.wifi_layout.addWidget(self.label_41, 7, 0, 1, 1)
+
+        self.label_53 = QLabel(self.network_layout)
+        self.label_53.setObjectName(u"label_53")
+
+        self.wifi_layout.addWidget(self.label_53, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.network_layout)
+        self.label_10.setObjectName(u"label_10")
+
+        self.wifi_layout.addWidget(self.label_10, 3, 1, 1, 1)
+
+        self.label_11 = QLabel(self.network_layout)
+        self.label_11.setObjectName(u"label_11")
+
+        self.wifi_layout.addWidget(self.label_11, 4, 0, 1, 1)
+
+        self.label_14 = QLabel(self.network_layout)
+        self.label_14.setObjectName(u"label_14")
+
+        self.wifi_layout.addWidget(self.label_14, 1, 1, 1, 1)
+
+        self.label_51 = QLabel(self.network_layout)
+        self.label_51.setObjectName(u"label_51")
+
+        self.wifi_layout.addWidget(self.label_51, 7, 1, 1, 1)
+
+        self.label_12 = QLabel(self.network_layout)
+        self.label_12.setObjectName(u"label_12")
+
+        self.wifi_layout.addWidget(self.label_12, 4, 1, 1, 1)
+
+        self.label_93 = QLabel(self.network_layout)
+        self.label_93.setObjectName(u"label_93")
+        self.label_93.setMinimumSize(QSize(0, 20))
+        self.label_93.setMaximumSize(QSize(16777215, 20))
+        font4 = QFont()
+        font4.setFamilies([u"Segoe UI"])
+        font4.setBold(True)
+        self.label_93.setFont(font4)
+        self.label_93.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_93.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.wifi_layout.addWidget(self.label_93, 0, 0, 1, 2)
+
+        self.label_40 = QLabel(self.network_layout)
+        self.label_40.setObjectName(u"label_40")
+
+        self.wifi_layout.addWidget(self.label_40, 6, 1, 1, 1)
+
+        self.label_37 = QLabel(self.network_layout)
+        self.label_37.setObjectName(u"label_37")
+
+        self.wifi_layout.addWidget(self.label_37, 5, 0, 1, 1)
+
+        self.label_39 = QLabel(self.network_layout)
+        self.label_39.setObjectName(u"label_39")
+
+        self.wifi_layout.addWidget(self.label_39, 6, 0, 1, 1)
+
+        self.label_100 = QLabel(self.network_layout)
+        self.label_100.setObjectName(u"label_100")
+
+        self.wifi_layout.addWidget(self.label_100, 9, 0, 1, 1)
+
+        self.label_101 = QLabel(self.network_layout)
+        self.label_101.setObjectName(u"label_101")
+
+        self.wifi_layout.addWidget(self.label_101, 9, 1, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.wifi_layout, 0, 0, 1, 1)
+
+        self.ethernet_layout = QGridLayout()
+        self.ethernet_layout.setObjectName(u"ethernet_layout")
+        self.ethernet_layout.setHorizontalSpacing(8)
+        self.ethernet_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_88 = QLabel(self.network_layout)
+        self.label_88.setObjectName(u"label_88")
+
+        self.ethernet_layout.addWidget(self.label_88, 6, 1, 1, 1)
+
+        self.label_80 = QLabel(self.network_layout)
+        self.label_80.setObjectName(u"label_80")
+
+        self.ethernet_layout.addWidget(self.label_80, 2, 1, 1, 1)
+
+        self.label_92 = QLabel(self.network_layout)
+        self.label_92.setObjectName(u"label_92")
+
+        self.ethernet_layout.addWidget(self.label_92, 8, 1, 1, 1)
+
+        self.label_5 = QLabel(self.network_layout)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setMinimumSize(QSize(0, 20))
+        self.label_5.setMaximumSize(QSize(16777215, 20))
+        font5 = QFont()
+        font5.setBold(True)
+        self.label_5.setFont(font5)
+        self.label_5.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_5.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.ethernet_layout.addWidget(self.label_5, 0, 0, 1, 2)
+
+        self.label_81 = QLabel(self.network_layout)
+        self.label_81.setObjectName(u"label_81")
+
+        self.ethernet_layout.addWidget(self.label_81, 3, 0, 1, 1)
+
+        self.label_84 = QLabel(self.network_layout)
+        self.label_84.setObjectName(u"label_84")
+
+        self.ethernet_layout.addWidget(self.label_84, 4, 1, 1, 1)
+
+        self.label_91 = QLabel(self.network_layout)
+        self.label_91.setObjectName(u"label_91")
+
+        self.ethernet_layout.addWidget(self.label_91, 8, 0, 1, 1)
+
+        self.label_79 = QLabel(self.network_layout)
+        self.label_79.setObjectName(u"label_79")
+
+        self.ethernet_layout.addWidget(self.label_79, 2, 0, 1, 1)
+
+        self.label_85 = QLabel(self.network_layout)
+        self.label_85.setObjectName(u"label_85")
+
+        self.ethernet_layout.addWidget(self.label_85, 5, 0, 1, 1)
+
+        self.label_87 = QLabel(self.network_layout)
+        self.label_87.setObjectName(u"label_87")
+
+        self.ethernet_layout.addWidget(self.label_87, 6, 0, 1, 1)
+
+        self.label_82 = QLabel(self.network_layout)
+        self.label_82.setObjectName(u"label_82")
+
+        self.ethernet_layout.addWidget(self.label_82, 3, 1, 1, 1)
+
+        self.label_86 = QLabel(self.network_layout)
+        self.label_86.setObjectName(u"label_86")
+
+        self.ethernet_layout.addWidget(self.label_86, 5, 1, 1, 1)
+
+        self.label_78 = QLabel(self.network_layout)
+        self.label_78.setObjectName(u"label_78")
+
+        self.ethernet_layout.addWidget(self.label_78, 1, 1, 1, 1)
+
+        self.label_83 = QLabel(self.network_layout)
+        self.label_83.setObjectName(u"label_83")
+
+        self.ethernet_layout.addWidget(self.label_83, 4, 0, 1, 1)
+
+        self.label_90 = QLabel(self.network_layout)
+        self.label_90.setObjectName(u"label_90")
+
+        self.ethernet_layout.addWidget(self.label_90, 7, 1, 1, 1)
+
+        self.label_89 = QLabel(self.network_layout)
+        self.label_89.setObjectName(u"label_89")
+
+        self.ethernet_layout.addWidget(self.label_89, 7, 0, 1, 1)
+
+        self.label_102 = QLabel(self.network_layout)
+        self.label_102.setObjectName(u"label_102")
+
+        self.ethernet_layout.addWidget(self.label_102, 9, 0, 1, 1)
+
+        self.label_103 = QLabel(self.network_layout)
+        self.label_103.setObjectName(u"label_103")
+
+        self.ethernet_layout.addWidget(self.label_103, 9, 1, 1, 1)
+
+        self.label_77 = QLabel(self.network_layout)
+        self.label_77.setObjectName(u"label_77")
+
+        self.ethernet_layout.addWidget(self.label_77, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addLayout(self.ethernet_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.network_layout, 0, 0, 1, 4)
+
+        self.disk_and_display_layout = QFrame(self.pc_info_page)
+        self.disk_and_display_layout.setObjectName(u"disk_and_display_layout")
+        self.disk_and_display_layout.setStyleSheet(u"")
+        self.disk_and_display_layout.setFrameShape(QFrame.Shape.StyledPanel)
+        self.disk_and_display_layout.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.disk_and_display_layout)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setHorizontalSpacing(30)
+        self.gridLayout_5.setContentsMargins(20, 10, 20, 10)
+        self.disk_layout = QGridLayout()
+        self.disk_layout.setObjectName(u"disk_layout")
+        self.disk_layout.setHorizontalSpacing(8)
+        self.disk_layout.setVerticalSpacing(6)
+        self.disk_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_108 = QLabel(self.disk_and_display_layout)
+        self.label_108.setObjectName(u"label_108")
+
+        self.disk_layout.addWidget(self.label_108, 6, 1, 1, 1)
+
+        self.label_22 = QLabel(self.disk_and_display_layout)
+        self.label_22.setObjectName(u"label_22")
+
+        self.disk_layout.addWidget(self.label_22, 1, 0, 1, 1)
+
+        self.label_21 = QLabel(self.disk_and_display_layout)
+        self.label_21.setObjectName(u"label_21")
+
+        self.disk_layout.addWidget(self.label_21, 5, 0, 1, 1)
+
+        self.label_16 = QLabel(self.disk_and_display_layout)
+        self.label_16.setObjectName(u"label_16")
+
+        self.disk_layout.addWidget(self.label_16, 2, 0, 1, 1)
+
+        self.label_104 = QLabel(self.disk_and_display_layout)
+        self.label_104.setObjectName(u"label_104")
+
+        self.disk_layout.addWidget(self.label_104, 1, 1, 1, 1)
+
+        self.label_23 = QLabel(self.disk_and_display_layout)
+        self.label_23.setObjectName(u"label_23")
+
+        self.disk_layout.addWidget(self.label_23, 6, 0, 1, 1)
+
+        self.label_109 = QLabel(self.disk_and_display_layout)
+        self.label_109.setObjectName(u"label_109")
+
+        self.disk_layout.addWidget(self.label_109, 7, 1, 1, 1)
+
+        self.label_105 = QLabel(self.disk_and_display_layout)
+        self.label_105.setObjectName(u"label_105")
+
+        self.disk_layout.addWidget(self.label_105, 3, 1, 1, 1)
+
+        self.label_18 = QLabel(self.disk_and_display_layout)
+        self.label_18.setObjectName(u"label_18")
+
+        self.disk_layout.addWidget(self.label_18, 3, 0, 1, 1)
+
+        self.label_33 = QLabel(self.disk_and_display_layout)
+        self.label_33.setObjectName(u"label_33")
+
+        self.disk_layout.addWidget(self.label_33, 7, 0, 1, 1)
+
+        self.label_19 = QLabel(self.disk_and_display_layout)
+        self.label_19.setObjectName(u"label_19")
+
+        self.disk_layout.addWidget(self.label_19, 2, 1, 1, 1)
+
+        self.label_107 = QLabel(self.disk_and_display_layout)
+        self.label_107.setObjectName(u"label_107")
+
+        self.disk_layout.addWidget(self.label_107, 5, 1, 1, 1)
+
+        self.label_106 = QLabel(self.disk_and_display_layout)
+        self.label_106.setObjectName(u"label_106")
+
+        self.disk_layout.addWidget(self.label_106, 4, 1, 1, 1)
+
+        self.label_20 = QLabel(self.disk_and_display_layout)
+        self.label_20.setObjectName(u"label_20")
+
+        self.disk_layout.addWidget(self.label_20, 4, 0, 1, 1)
+
+        self.label_15 = QLabel(self.disk_and_display_layout)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setMinimumSize(QSize(0, 20))
+        self.label_15.setMaximumSize(QSize(16777215, 20))
+        self.label_15.setFont(font5)
+        self.label_15.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.disk_layout.addWidget(self.label_15, 0, 0, 1, 2)
+
+
+        self.gridLayout_5.addLayout(self.disk_layout, 0, 0, 1, 1)
+
+        self.display_layout = QGridLayout()
+        self.display_layout.setObjectName(u"display_layout")
+        self.display_layout.setHorizontalSpacing(8)
+        self.display_layout.setContentsMargins(10, 10, 10, 10)
+        self.label_98 = QLabel(self.disk_and_display_layout)
+        self.label_98.setObjectName(u"label_98")
+
+        self.display_layout.addWidget(self.label_98, 6, 1, 1, 1)
+
+        self.label_42 = QLabel(self.disk_and_display_layout)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setMinimumSize(QSize(0, 20))
+        self.label_42.setMaximumSize(QSize(16777215, 20))
+        self.label_42.setFont(font5)
+        self.label_42.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_42.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.display_layout.addWidget(self.label_42, 0, 0, 1, 2)
+
+        self.label_96 = QLabel(self.disk_and_display_layout)
+        self.label_96.setObjectName(u"label_96")
+
+        self.display_layout.addWidget(self.label_96, 7, 0, 1, 1)
+
+        self.label_48 = QLabel(self.disk_and_display_layout)
+        self.label_48.setObjectName(u"label_48")
+
+        self.display_layout.addWidget(self.label_48, 1, 0, 1, 1)
+
+        self.label_94 = QLabel(self.disk_and_display_layout)
+        self.label_94.setObjectName(u"label_94")
+
+        self.display_layout.addWidget(self.label_94, 5, 0, 1, 1)
+
+        self.label_99 = QLabel(self.disk_and_display_layout)
+        self.label_99.setObjectName(u"label_99")
+
+        self.display_layout.addWidget(self.label_99, 7, 1, 1, 1)
+
+        self.label_45 = QLabel(self.disk_and_display_layout)
+        self.label_45.setObjectName(u"label_45")
+
+        self.display_layout.addWidget(self.label_45, 2, 1, 1, 1)
+
+        self.label_95 = QLabel(self.disk_and_display_layout)
+        self.label_95.setObjectName(u"label_95")
+
+        self.display_layout.addWidget(self.label_95, 6, 0, 1, 1)
+
+        self.label_49 = QLabel(self.disk_and_display_layout)
+        self.label_49.setObjectName(u"label_49")
+
+        self.display_layout.addWidget(self.label_49, 1, 1, 1, 1)
+
+        self.label_44 = QLabel(self.disk_and_display_layout)
+        self.label_44.setObjectName(u"label_44")
+
+        self.display_layout.addWidget(self.label_44, 3, 0, 1, 1)
+
+        self.label_97 = QLabel(self.disk_and_display_layout)
+        self.label_97.setObjectName(u"label_97")
+
+        self.display_layout.addWidget(self.label_97, 5, 1, 1, 1)
+
+        self.label_47 = QLabel(self.disk_and_display_layout)
+        self.label_47.setObjectName(u"label_47")
+
+        self.display_layout.addWidget(self.label_47, 3, 1, 1, 1)
+
+        self.label_50 = QLabel(self.disk_and_display_layout)
+        self.label_50.setObjectName(u"label_50")
+
+        self.display_layout.addWidget(self.label_50, 4, 1, 1, 1)
+
+        self.label_43 = QLabel(self.disk_and_display_layout)
+        self.label_43.setObjectName(u"label_43")
+
+        self.display_layout.addWidget(self.label_43, 2, 0, 1, 1)
+
+        self.label_46 = QLabel(self.disk_and_display_layout)
+        self.label_46.setObjectName(u"label_46")
+
+        self.display_layout.addWidget(self.label_46, 4, 0, 1, 1)
+
+
+        self.gridLayout_5.addLayout(self.display_layout, 0, 1, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.disk_and_display_layout, 1, 0, 1, 4)
+
+        self.back_home_button = QPushButton(self.pc_info_page)
+        self.back_home_button.setObjectName(u"back_home_button")
+        self.back_home_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon14 = QIcon(QIcon.fromTheme(u"document-revert"))
+        self.back_home_button.setIcon(icon14)
+
+        self.gridLayout_3.addWidget(self.back_home_button, 2, 0, 1, 1)
+
+        self.taskmanager_button = QPushButton(self.pc_info_page)
+        self.taskmanager_button.setObjectName(u"taskmanager_button")
+        self.taskmanager_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon15 = QIcon(QIcon.fromTheme(u"task"))
+        self.taskmanager_button.setIcon(icon15)
+
+        self.gridLayout_3.addWidget(self.taskmanager_button, 2, 2, 1, 1)
+
+        self.sysinfo = QFrame(self.pc_info_page)
+        self.sysinfo.setObjectName(u"sysinfo")
+        self.sysinfo.setStyleSheet(u"")
+        self.sysinfo.setFrameShape(QFrame.Shape.StyledPanel)
+        self.sysinfo.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_11 = QGridLayout(self.sysinfo)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setVerticalSpacing(25)
+        self.gridLayout_11.setContentsMargins(10, -1, -1, -1)
+        self.syslayout = QGridLayout()
+        self.syslayout.setObjectName(u"syslayout")
+        self.syslayout.setHorizontalSpacing(8)
+        self.syslayout.setVerticalSpacing(10)
+        self.syslayout.setContentsMargins(5, 5, 5, 5)
+        self.label_26 = QLabel(self.sysinfo)
+        self.label_26.setObjectName(u"label_26")
+
+        self.syslayout.addWidget(self.label_26, 2, 1, 1, 1)
+
+        self.label_32 = QLabel(self.sysinfo)
+        self.label_32.setObjectName(u"label_32")
+
+        self.syslayout.addWidget(self.label_32, 1, 1, 1, 1)
+
+        self.label_113 = QLabel(self.sysinfo)
+        self.label_113.setObjectName(u"label_113")
+
+        self.syslayout.addWidget(self.label_113, 11, 0, 1, 1)
+
+        self.label_115 = QLabel(self.sysinfo)
+        self.label_115.setObjectName(u"label_115")
+
+        self.syslayout.addWidget(self.label_115, 13, 0, 1, 1)
+
+        self.label_28 = QLabel(self.sysinfo)
+        self.label_28.setObjectName(u"label_28")
+
+        self.syslayout.addWidget(self.label_28, 3, 1, 1, 1)
+
+        self.label_27 = QLabel(self.sysinfo)
+        self.label_27.setObjectName(u"label_27")
+
+        self.syslayout.addWidget(self.label_27, 3, 0, 1, 1)
+
+        self.label_25 = QLabel(self.sysinfo)
+        self.label_25.setObjectName(u"label_25")
+
+        self.syslayout.addWidget(self.label_25, 2, 0, 1, 1)
+
+        self.label_123 = QLabel(self.sysinfo)
+        self.label_123.setObjectName(u"label_123")
+
+        self.syslayout.addWidget(self.label_123, 13, 1, 1, 1)
+
+        self.label_111 = QLabel(self.sysinfo)
+        self.label_111.setObjectName(u"label_111")
+
+        self.syslayout.addWidget(self.label_111, 9, 0, 1, 1)
+
+        self.label_117 = QLabel(self.sysinfo)
+        self.label_117.setObjectName(u"label_117")
+
+        self.syslayout.addWidget(self.label_117, 4, 1, 1, 1)
+
+        self.label_29 = QLabel(self.sysinfo)
+        self.label_29.setObjectName(u"label_29")
+
+        self.syslayout.addWidget(self.label_29, 5, 0, 1, 1)
+
+        self.label_17 = QLabel(self.sysinfo)
+        self.label_17.setObjectName(u"label_17")
+
+        self.syslayout.addWidget(self.label_17, 6, 0, 1, 1)
+
+        self.label_110 = QLabel(self.sysinfo)
+        self.label_110.setObjectName(u"label_110")
+
+        self.syslayout.addWidget(self.label_110, 9, 1, 1, 1)
+
+        self.label_30 = QLabel(self.sysinfo)
+        self.label_30.setObjectName(u"label_30")
+
+        self.syslayout.addWidget(self.label_30, 5, 1, 1, 1)
+
+        self.label_31 = QLabel(self.sysinfo)
+        self.label_31.setObjectName(u"label_31")
+
+        self.syslayout.addWidget(self.label_31, 1, 0, 1, 1)
+
+        self.label_24 = QLabel(self.sysinfo)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMinimumSize(QSize(0, 20))
+        self.label_24.setMaximumSize(QSize(16777215, 20))
+        self.label_24.setFont(font5)
+        self.label_24.setStyleSheet(u"color: rgb(255, 255, 255);\n"
+"background-color: rgb(2, 193, 254);")
+        self.label_24.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.syslayout.addWidget(self.label_24, 0, 0, 1, 2)
+
+        self.label_120 = QLabel(self.sysinfo)
+        self.label_120.setObjectName(u"label_120")
+
+        self.syslayout.addWidget(self.label_120, 10, 1, 1, 1)
+
+        self.label_121 = QLabel(self.sysinfo)
+        self.label_121.setObjectName(u"label_121")
+
+        self.syslayout.addWidget(self.label_121, 11, 1, 1, 1)
+
+        self.label_114 = QLabel(self.sysinfo)
+        self.label_114.setObjectName(u"label_114")
+
+        self.syslayout.addWidget(self.label_114, 12, 0, 1, 1)
+
+        self.label_122 = QLabel(self.sysinfo)
+        self.label_122.setObjectName(u"label_122")
+
+        self.syslayout.addWidget(self.label_122, 12, 1, 1, 1)
+
+        self.label_112 = QLabel(self.sysinfo)
+        self.label_112.setObjectName(u"label_112")
+
+        self.syslayout.addWidget(self.label_112, 10, 0, 1, 1)
+
+        self.label_35 = QLabel(self.sysinfo)
+        self.label_35.setObjectName(u"label_35")
+
+        self.syslayout.addWidget(self.label_35, 8, 0, 1, 1)
+
+        self.label_119 = QLabel(self.sysinfo)
+        self.label_119.setObjectName(u"label_119")
+
+        self.syslayout.addWidget(self.label_119, 7, 1, 1, 1)
+
+        self.label_118 = QLabel(self.sysinfo)
+        self.label_118.setObjectName(u"label_118")
+
+        self.syslayout.addWidget(self.label_118, 7, 0, 1, 1)
+
+        self.label_36 = QLabel(self.sysinfo)
+        self.label_36.setObjectName(u"label_36")
+
+        self.syslayout.addWidget(self.label_36, 8, 1, 1, 1)
+
+        self.label_116 = QLabel(self.sysinfo)
+        self.label_116.setObjectName(u"label_116")
+
+        self.syslayout.addWidget(self.label_116, 4, 0, 1, 1)
+
+        self.label_34 = QLabel(self.sysinfo)
+        self.label_34.setObjectName(u"label_34")
+
+        self.syslayout.addWidget(self.label_34, 6, 1, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.syslayout, 0, 0, 1, 1)
+
+        self.perfomrncelgrdlayout_2 = QGridLayout()
+        self.perfomrncelgrdlayout_2.setObjectName(u"perfomrncelgrdlayout_2")
+        self.label_125 = QLabel(self.sysinfo)
+        self.label_125.setObjectName(u"label_125")
+        self.label_125.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_125, 0, 1, 1, 1)
+
+        self.widget_4 = QWidget(self.sysinfo)
+        self.widget_4.setObjectName(u"widget_4")
+        self.widget_4.setMinimumSize(QSize(32, 32))
+        self.widget_4.setMaximumSize(QSize(64, 64))
+        self.widget_4.setStyleSheet(u"background-color: rgb(19, 255, 204);\n"
+"border-radius:5px;")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_4, 0, 2, 1, 1)
+
+        self.widget_5 = QWidget(self.sysinfo)
+        self.widget_5.setObjectName(u"widget_5")
+        self.widget_5.setStyleSheet(u"background-color: rgb(255, 255, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_5, 1, 2, 1, 1)
+
+        self.label_127 = QLabel(self.sysinfo)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setMinimumSize(QSize(32, 32))
+        self.label_127.setMaximumSize(QSize(64, 64))
+        self.label_127.setPixmap(QPixmap(u":/perfomance_icons/cpu_icon.png"))
+        self.label_127.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_127, 0, 0, 1, 1)
+
+        self.label_126 = QLabel(self.sysinfo)
+        self.label_126.setObjectName(u"label_126")
+        self.label_126.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_126, 2, 1, 1, 1)
+
+        self.label_124 = QLabel(self.sysinfo)
+        self.label_124.setObjectName(u"label_124")
+        self.label_124.setMinimumSize(QSize(32, 32))
+        self.label_124.setMaximumSize(QSize(64, 64))
+        self.label_124.setPixmap(QPixmap(u":/perfomance_icons/ram_icon.png"))
+        self.label_124.setScaledContents(True)
+        self.label_124.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_124, 1, 0, 1, 1)
+
+        self.widget_6 = QWidget(self.sysinfo)
+        self.widget_6.setObjectName(u"widget_6")
+        self.widget_6.setStyleSheet(u"background-color: rgb(255, 85, 0);")
+
+        self.perfomrncelgrdlayout_2.addWidget(self.widget_6, 2, 2, 1, 1)
+
+        self.label_129 = QLabel(self.sysinfo)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_129, 1, 1, 1, 1)
+
+        self.label_128 = QLabel(self.sysinfo)
+        self.label_128.setObjectName(u"label_128")
+        self.label_128.setMinimumSize(QSize(32, 32))
+        self.label_128.setMaximumSize(QSize(64, 64))
+        self.label_128.setPixmap(QPixmap(u":/perfomance_icons/ssd_icon.png"))
+        self.label_128.setScaledContents(True)
+
+        self.perfomrncelgrdlayout_2.addWidget(self.label_128, 2, 0, 1, 1)
+
+
+        self.gridLayout_11.addLayout(self.perfomrncelgrdlayout_2, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.sysinfo, 0, 4, 2, 2)
+
+        self.stackedWidget.addWidget(self.pc_info_page)
+        self.coopurl_page = QWidget()
+        self.coopurl_page.setObjectName(u"coopurl_page")
+        self.coopurl_page.setStyleSheet(u"color: rgb(0, 0, 0);")
+        self.gridLayout_8 = QGridLayout(self.coopurl_page)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.gridLayout_6 = QGridLayout()
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.searchbarHorintoallayout = QHBoxLayout()
+        self.searchbarHorintoallayout.setObjectName(u"searchbarHorintoallayout")
+        self.searchbarHorintoallayout.setContentsMargins(40, -1, 40, -1)
+        self.coopurl_search_lineedit = QLineEdit(self.coopurl_page)
+        self.coopurl_search_lineedit.setObjectName(u"coopurl_search_lineedit")
+        self.coopurl_search_lineedit.setCursorMoveStyle(Qt.CursorMoveStyle.VisualMoveStyle)
+        self.coopurl_search_lineedit.setClearButtonEnabled(True)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_search_lineedit)
+
+        self.coopurl_Search_button = QPushButton(self.coopurl_page)
+        self.coopurl_Search_button.setObjectName(u"coopurl_Search_button")
+        self.coopurl_Search_button.setStyleSheet(u"QPushButton {\n"
+"    color: white;\n"
+"    background-color: #00AEEF; /* Bootstrap's primary blue color */\n"
+"\n"
+"    border-radius: 5px;\n"
+"    padding: 8px 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #0056b3; /* Darker blue on hover */\n"
+"    border-color: #0056b3; /* Darker blue border on hover */\n"
+"}")
+        icon16 = QIcon(QIcon.fromTheme(u"edit-find"))
+        self.coopurl_Search_button.setIcon(icon16)
+
+        self.searchbarHorintoallayout.addWidget(self.coopurl_Search_button)
+
+
+        self.gridLayout_6.addLayout(self.searchbarHorintoallayout, 0, 0, 1, 1)
+
+        self.coopurl_table = QTableWidget(self.coopurl_page)
+        if (self.coopurl_table.columnCount() < 2):
+            self.coopurl_table.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.coopurl_table.setHorizontalHeaderItem(1, __qtablewidgetitem1)
+        self.coopurl_table.setObjectName(u"coopurl_table")
+
+        self.gridLayout_6.addWidget(self.coopurl_table, 1, 0, 1, 1)
+
+
+        self.gridLayout_8.addLayout(self.gridLayout_6, 0, 0, 1, 1)
+
+        self.stackedWidget.addWidget(self.coopurl_page)
+
+        self.verticalLayout_5.addWidget(self.stackedWidget)
+
+
+        self.gridLayout.addWidget(self.main_menu, 0, 2, 1, 1)
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy1.setHorizontalStretch(1)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.icon_only_widget.sizePolicy().hasHeightForWidth())
+        self.icon_only_widget.setSizePolicy(sizePolicy1)
+        self.icon_only_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"text-align: center;\n"
+"border-radius:10px;\n"
+"text-alignment:center\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label = QLabel(self.icon_only_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(48, 48))
+        self.label.setMaximumSize(QSize(48, 48))
+        self.label.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_3.addWidget(self.label)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 87, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer_4)
+
+        self.verticalLayout = QVBoxLayout()
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.home_2_button = QPushButton(self.icon_only_widget)
+        self.home_2_button.setObjectName(u"home_2_button")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.home_2_button.sizePolicy().hasHeightForWidth())
+        self.home_2_button.setSizePolicy(sizePolicy2)
+        icon17 = QIcon()
+        icon17.addFile(u":/images/home_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon17.addFile(u":/images/home_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.home_2_button.setIcon(icon17)
+        self.home_2_button.setIconSize(QSize(32, 32))
+        self.home_2_button.setCheckable(True)
+        self.home_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.home_2_button)
+
+        self.app_2_button = QPushButton(self.icon_only_widget)
+        self.app_2_button.setObjectName(u"app_2_button")
+        icon18 = QIcon()
+        icon18.addFile(u":/images/apps_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon18.addFile(u":/images/apps_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.app_2_button.setIcon(icon18)
+        self.app_2_button.setIconSize(QSize(32, 32))
+        self.app_2_button.setCheckable(True)
+        self.app_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.app_2_button)
+
+        self.about_2_button = QPushButton(self.icon_only_widget)
+        self.about_2_button.setObjectName(u"about_2_button")
+        icon19 = QIcon()
+        icon19.addFile(u":/images/about_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon19.addFile(u":/images/about_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.about_2_button.setIcon(icon19)
+        self.about_2_button.setIconSize(QSize(32, 32))
+        self.about_2_button.setCheckable(True)
+        self.about_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.about_2_button)
+
+        self.update_2_button = QPushButton(self.icon_only_widget)
+        self.update_2_button.setObjectName(u"update_2_button")
+        icon20 = QIcon()
+        icon20.addFile(u":/images/update_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon20.addFile(u":/images/update_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.update_2_button.setIcon(icon20)
+        self.update_2_button.setIconSize(QSize(32, 32))
+        self.update_2_button.setCheckable(True)
+        self.update_2_button.setAutoExclusive(True)
+
+        self.verticalLayout.addWidget(self.update_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+        self.verticalSpacer = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.exit_2_button = QPushButton(self.icon_only_widget)
+        self.exit_2_button.setObjectName(u"exit_2_button")
+        icon21 = QIcon()
+        icon21.addFile(u":/images/logout_icon_light.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon21.addFile(u":/images/logout_icon_blue.svg", QSize(), QIcon.Normal, QIcon.On)
+        self.exit_2_button.setIcon(icon21)
+        self.exit_2_button.setIconSize(QSize(32, 32))
+        self.exit_2_button.setCheckable(True)
+        self.exit_2_button.setAutoExclusive(True)
+
+        self.horizontalLayout_2.addWidget(self.exit_2_button)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+
+
+        self.gridLayout.addWidget(self.icon_only_widget, 0, 0, 1, 1)
+
+        self.icon_name_widget = QWidget(self.centralwidget)
+        self.icon_name_widget.setObjectName(u"icon_name_widget")
+        self.icon_name_widget.setEnabled(True)
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy3.setHorizontalStretch(2)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.icon_name_widget.sizePolicy().hasHeightForWidth())
+        self.icon_name_widget.setSizePolicy(sizePolicy3)
+        self.icon_name_widget.setStyleSheet(u"QWidget{background-color: rgb(8, 176, 240);}\n"
+"QPushButton {\n"
+"\n"
+" color: white;\n"
+"text-align:left;\n"
+"height:40px;\n"
+"border:none;\n"
+"font-weight:bold;\n"
+"padding-left:10px;\n"
+"padding-right:10px;\n"
+"border-top-left-radius:10px;\n"
+"\n"
+"\n"
+"}\n"
+"QPushButton::checked{\n"
+"background-color:#F5FAFE;\n"
+"color:#1F95EF;\n"
+"font-weight:bold;\n"
+"\n"
+"}")
+        self.verticalLayout_4 = QVBoxLayout(self.icon_name_widget)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.label_2 = QLabel(self.icon_name_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(48, 48))
+        self.label_2.setMaximumSize(QSize(80, 80))
+        self.label_2.setPixmap(QPixmap(u":/images/logo_white.svg"))
+        self.label_2.setScaledContents(True)
+
+        self.horizontalLayout_4.addWidget(self.label_2)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout_4)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 146, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_6)
+
+        self.verticalLayout_2 = QVBoxLayout()
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(-1, -1, 1, -1)
+        self.home_1_button = QPushButton(self.icon_name_widget)
+        self.home_1_button.setObjectName(u"home_1_button")
+        font6 = QFont()
+        font6.setFamilies([u"Roboto Medium"])
+        font6.setPointSize(11)
+        font6.setBold(True)
+        self.home_1_button.setFont(font6)
+        self.home_1_button.setIcon(icon17)
+        self.home_1_button.setIconSize(QSize(32, 32))
+        self.home_1_button.setCheckable(True)
+        self.home_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.home_1_button)
+
+        self.app_1_button = QPushButton(self.icon_name_widget)
+        self.app_1_button.setObjectName(u"app_1_button")
+        self.app_1_button.setFont(font1)
+        self.app_1_button.setIcon(icon18)
+        self.app_1_button.setIconSize(QSize(32, 32))
+        self.app_1_button.setCheckable(True)
+        self.app_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.app_1_button)
+
+        self.about_1_button = QPushButton(self.icon_name_widget)
+        self.about_1_button.setObjectName(u"about_1_button")
+        self.about_1_button.setFont(font1)
+        self.about_1_button.setIcon(icon19)
+        self.about_1_button.setIconSize(QSize(32, 32))
+        self.about_1_button.setCheckable(True)
+        self.about_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.about_1_button)
+
+        self.update_1_button = QPushButton(self.icon_name_widget)
+        self.update_1_button.setObjectName(u"update_1_button")
+        self.update_1_button.setFont(font1)
+        self.update_1_button.setIcon(icon20)
+        self.update_1_button.setIconSize(QSize(32, 32))
+        self.update_1_button.setCheckable(True)
+        self.update_1_button.setAutoExclusive(True)
+
+        self.verticalLayout_2.addWidget(self.update_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.verticalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 145, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_4.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout = QHBoxLayout()
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.exit_1_button = QPushButton(self.icon_name_widget)
+        self.exit_1_button.setObjectName(u"exit_1_button")
+        self.exit_1_button.setFont(font1)
+        self.exit_1_button.setIcon(icon21)
+        self.exit_1_button.setIconSize(QSize(32, 32))
+        self.exit_1_button.setCheckable(True)
+        self.exit_1_button.setAutoExclusive(True)
+
+        self.horizontalLayout.addWidget(self.exit_1_button)
+
+
+        self.verticalLayout_4.addLayout(self.horizontalLayout)
+
+
+        self.gridLayout.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        self.pushButton_19.toggled.connect(self.icon_only_widget.setHidden)
+        self.pushButton_19.toggled.connect(self.icon_name_widget.setVisible)
+        self.home_2_button.toggled.connect(self.home_1_button.setChecked)
+        self.app_2_button.toggled.connect(self.app_1_button.setChecked)
+        self.about_2_button.toggled.connect(self.about_1_button.setChecked)
+        self.update_2_button.toggled.connect(self.update_1_button.setChecked)
+        self.exit_2_button.toggled.connect(self.exit_1_button.setChecked)
+        self.exit_1_button.toggled.connect(self.exit_2_button.setChecked)
+        self.update_1_button.toggled.connect(self.update_2_button.setChecked)
+        self.about_1_button.toggled.connect(self.about_2_button.setChecked)
+        self.app_1_button.toggled.connect(self.app_2_button.setChecked)
+        self.home_1_button.toggled.connect(self.home_2_button.setChecked)
+        self.exit_2_button.toggled.connect(MainWindow.close)
+        self.exit_1_button.toggled.connect(MainWindow.close)
+
+        self.stackedWidget.setCurrentIndex(1)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.pushButton_19.setText("")
+#if QT_CONFIG(tooltip)
+        self.cashmanage_button.setToolTip(QCoreApplication.translate("MainWindow", u"Daily Cash Management", None))
+#endif // QT_CONFIG(tooltip)
+        self.cashmanage_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.about_coop_button.setToolTip(QCoreApplication.translate("MainWindow", u"About Coop", None))
+#endif // QT_CONFIG(tooltip)
+        self.about_coop_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.alhuda_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Alhuda ", None))
+#endif // QT_CONFIG(tooltip)
+        self.alhuda_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.phonebook_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop PhoneBook", None))
+#endif // QT_CONFIG(tooltip)
+        self.phonebook_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopurl_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop URLS", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopurl_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.michu_button.setToolTip(QCoreApplication.translate("MainWindow", u"Michu Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.michu_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopay_button.setToolTip(QCoreApplication.translate("MainWindow", u"Coop Ebirr", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopay_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.conventional_button.setToolTip(QCoreApplication.translate("MainWindow", u"Conventional Products", None))
+#endif // QT_CONFIG(tooltip)
+        self.conventional_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.coopapp_button.setToolTip(QCoreApplication.translate("MainWindow", u"CoopApp", None))
+#endif // QT_CONFIG(tooltip)
+        self.coopapp_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.remittance_button.setToolTip(QCoreApplication.translate("MainWindow", u"Remittance Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.remittance_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.atm_button.setToolTip(QCoreApplication.translate("MainWindow", u"CRM and NCR Guide", None))
+#endif // QT_CONFIG(tooltip)
+        self.atm_button.setText("")
+#if QT_CONFIG(tooltip)
+        self.pcinfo_button.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>PC Information</p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.pcinfo_button.setText("")
+        self.addprinter_button.setText(QCoreApplication.translate("MainWindow", u"Add Printers", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"Speed:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u" Subnet mask:", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u" IP Address:", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u" Adapter:", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_53.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_93.setText(QCoreApplication.translate("MainWindow", u"Wifi", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_100.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_101.setText(QCoreApplication.translate("MainWindow", u"Connected", None))
+        self.label_88.setText(QCoreApplication.translate("MainWindow", u"4.4.2.2", None))
+        self.label_80.setText(QCoreApplication.translate("MainWindow", u"10.1.15.7", None))
+        self.label_92.setText(QCoreApplication.translate("MainWindow", u"100Mbps", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Ethernet IP info", None))
+        self.label_81.setText(QCoreApplication.translate("MainWindow", u"Subnet mask:", None))
+        self.label_84.setText(QCoreApplication.translate("MainWindow", u"10.1.15.1", None))
+        self.label_91.setText(QCoreApplication.translate("MainWindow", u"Speed", None))
+        self.label_79.setText(QCoreApplication.translate("MainWindow", u"IP Address:", None))
+        self.label_85.setText(QCoreApplication.translate("MainWindow", u"Default DNS:", None))
+        self.label_87.setText(QCoreApplication.translate("MainWindow", u"Alternative DNS:", None))
+        self.label_82.setText(QCoreApplication.translate("MainWindow", u"255.255.255.0", None))
+        self.label_86.setText(QCoreApplication.translate("MainWindow", u"10.1.70.10", None))
+        self.label_78.setText(QCoreApplication.translate("MainWindow", u"Ethernet 3", None))
+        self.label_83.setText(QCoreApplication.translate("MainWindow", u"Default Gateway :", None))
+        self.label_90.setText(QCoreApplication.translate("MainWindow", u"W3HR5YR5RY6FC4B4", None))
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"MAC  Address:", None))
+        self.label_102.setText(QCoreApplication.translate("MainWindow", u"Network Status ", None))
+        self.label_103.setText(QCoreApplication.translate("MainWindow", u"Disconnected", None))
+        self.label_77.setText(QCoreApplication.translate("MainWindow", u"Adapter:", None))
+        self.label_108.setText(QCoreApplication.translate("MainWindow", u"Fixed hard disk media", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Description", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Partitions", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Manufacturer", None))
+        self.label_104.setText(QCoreApplication.translate("MainWindow", u"Disk drive", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"Media Type", None))
+        self.label_109.setText(QCoreApplication.translate("MainWindow", u"512", None))
+        self.label_105.setText(QCoreApplication.translate("MainWindow", u"SAMSUNG MZVLQ512HBLU-00B00", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"Bytes/Sector", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"(Standard disk drives)", None))
+        self.label_107.setText(QCoreApplication.translate("MainWindow", u"5", None))
+        self.label_106.setText(QCoreApplication.translate("MainWindow", u"476.94 GB (512105932800 bytes)", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Size", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Disk", None))
+        self.label_98.setText(QCoreApplication.translate("MainWindow", u"2160 x 1440 x 60 hertz", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Display ", None))
+        self.label_96.setText(QCoreApplication.translate("MainWindow", u"Bits/Pixel", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.label_94.setText(QCoreApplication.translate("MainWindow", u"Driver Version", None))
+        self.label_99.setText(QCoreApplication.translate("MainWindow", u"32", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Intel Corporation", None))
+        self.label_95.setText(QCoreApplication.translate("MainWindow", u"Resolution", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"Adapter Description", None))
+        self.label_97.setText(QCoreApplication.translate("MainWindow", u"31.0.101.1999", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"Intel(R) Iris(R) Xe Graphics", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"1.00 GB (1073741824 bytes)", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"Adapter Type", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"Adapter RAM", None))
+        self.back_home_button.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.taskmanager_button.setText(QCoreApplication.translate("MainWindow", u"Task Manager ", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"GenuineIntel", None))
+        self.label_32.setText(QCoreApplication.translate("MainWindow", u"11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz", None))
+        self.label_113.setText(QCoreApplication.translate("MainWindow", u"Version", None))
+        self.label_115.setText(QCoreApplication.translate("MainWindow", u"Installed RAM", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"3187 MHz", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Processor Max Clock Speed", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Processor Manufacturer", None))
+        self.label_123.setText(QCoreApplication.translate("MainWindow", u"7.79 GB", None))
+        self.label_111.setText(QCoreApplication.translate("MainWindow", u"System Type", None))
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"4", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Number of Logical Processors", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"System Name", None))
+        self.label_110.setText(QCoreApplication.translate("MainWindow", u"x64-based PC", None))
+        self.label_30.setText(QCoreApplication.translate("MainWindow", u"8", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Processor Name", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"System Info", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Microsoft Windows 11 Pro", None))
+        self.label_121.setText(QCoreApplication.translate("MainWindow", u"10.0.22631", None))
+        self.label_114.setText(QCoreApplication.translate("MainWindow", u"OS Manufacturer", None))
+        self.label_122.setText(QCoreApplication.translate("MainWindow", u"Microsoft Corporation", None))
+        self.label_112.setText(QCoreApplication.translate("MainWindow", u"OS Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"System Model", None))
+        self.label_119.setText(QCoreApplication.translate("MainWindow", u"realme", None))
+        self.label_118.setText(QCoreApplication.translate("MainWindow", u"System Manufacturer\"", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CloudProXXXX", None))
+        self.label_116.setText(QCoreApplication.translate("MainWindow", u"Number of Cores", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"DIG-BLP-10", None))
+        self.label_125.setText(QCoreApplication.translate("MainWindow", u"3.1gHz (3.2%)", None))
+        self.label_127.setText("")
+        self.label_126.setText(QCoreApplication.translate("MainWindow", u"0.04%", None))
+        self.label_124.setText("")
+        self.label_129.setText(QCoreApplication.translate("MainWindow", u"6.7/8 GB (90%)", None))
+        self.label_128.setText("")
+        self.coopurl_search_lineedit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search URLS", None))
+        self.coopurl_Search_button.setText("")
+        ___qtablewidgetitem = self.coopurl_table.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Site Name", None));
+        ___qtablewidgetitem1 = self.coopurl_table.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"URL", None));
+        self.label.setText("")
+        self.home_2_button.setText("")
+        self.app_2_button.setText("")
+        self.about_2_button.setText("")
+        self.update_2_button.setText("")
+        self.exit_2_button.setText("")
+        self.label_2.setText("")
+        self.home_1_button.setText(QCoreApplication.translate("MainWindow", u"Home", None))
+        self.app_1_button.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
+        self.about_1_button.setText(QCoreApplication.translate("MainWindow", u"About", None))
+        self.update_1_button.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.exit_1_button.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
+    # retranslateUi
+
