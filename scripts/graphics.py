@@ -13,15 +13,10 @@ def get_graphics_info():
             "Adapter Description": controller.Description,
             "Adapter RAM": f"{int(controller.AdapterRAM) / (1024**3):.2f} GB ({controller.AdapterRAM} bytes)",
             "Driver Version": controller.DriverVersion,
-            "Color Table Entries": controller.ColorTableEntries,
             "Resolution": f"{controller.CurrentHorizontalResolution} x {controller.CurrentVerticalResolution} x {controller.CurrentRefreshRate} hertz",
-            "Bits/Pixel": controller.CurrentBitsPerPixel
+            "Bits/Pixel": str(controller.CurrentBitsPerPixel)
         }
-        # Break after the first controller to only get the primary one
+     
         break
 
     return graphics_info
-
-if __name__ == "__main__":
-    graphics_info = get_graphics_info()
-    print(graphics_info)

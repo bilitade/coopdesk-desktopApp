@@ -1,6 +1,5 @@
 import psutil
 import socket
-import dns.resolver
 import wmi
 
 def get_wifi_info():
@@ -20,15 +19,14 @@ def get_wifi_info():
             addrs = psutil.net_if_addrs()[interface]
             stats = psutil.net_if_stats()[interface]
             adapter_info.update({
-                'is_up': stats.isup,
-                'speed': stats.speed,
-                'mtu': stats.mtu,
-                'mac_address': None,
-                'ip_address': None,
-                'netmask': None,
-                'broadcast_ip': None,
-                'default_dns': None,
-                'alternative_dns': None,
+                'is_up': 'connected' if stats.isup else 'disconnected',
+                'speed': f"{stats.speed} Mbps",
+                'mac_address': 'N/A',
+                'ip_address': 'N/A',
+                'netmask': 'N/A',
+                'broadcast_ip': 'N/A',
+                'default_dns': 'N/A',
+                'alternative_dns': 'N/A',
                 'model': adapter_models[interface]
             })
             for addr in addrs:
@@ -44,18 +42,24 @@ def get_wifi_info():
         # Only consider the first active Wi-Fi adapter
         break
 
-    # Get DNS servers
-    dns_resolvers = dns.resolver.Resolver()
-    dns_servers = dns_resolvers.nameservers
-    if dns_servers:
-        wifi_info.update({
-            'default_dns': dns_servers[0] if len(dns_servers) > 0 else None,
-            'alternative_dns': dns_servers[1] if len(dns_servers) > 1 else None
-        })
+    # Function to parse network interface addresses for DNS servers
+    def get_dns_servers(interface_name):
+        dns_servers = []
+        for nic in psutil.net_if_addrs().get(interface_name, []):
+            if nic.family == socket.AF_INET:
+                dns_servers.append(nic.address)
+        return dns_servers
+
+    # Get DNS servers specific to the WiFi interface
+    for interface in wifi_models:
+        dns_servers = get_dns_servers(interface)
+        if dns_servers:
+            wifi_info.update({
+                'default_dns': dns_servers[0] if len(dns_servers) > 0 else None,
+                'alternative_dns':str( dns_servers[1]) if len(dns_servers) > 1 else 'N/A'
+            })
+        break
 
     return wifi_info
 
-if __name__ == "__main__":
-    wifi_info = get_wifi_info()
-    print("WiFi Adapter Info:")
-    print(wifi_info)
+

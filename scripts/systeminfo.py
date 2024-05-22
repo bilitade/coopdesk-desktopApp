@@ -8,7 +8,7 @@ def get_important_system_info():
         os_info = wmi.ExecQuery("SELECT * FROM Win32_OperatingSystem")[0]
         os_data = {
             "OS Name": os_info.Caption,
-            "Version": os_info.Version,
+            "Version": str(os_info.Version),
             "OS Manufacturer": os_info.Manufacturer,
             "Installed RAM": f"{int(os_info.TotalVisibleMemorySize) / 1024/1024 :.2f} GB",
            
@@ -28,8 +28,8 @@ def get_important_system_info():
             "Processor Name": processor_info.Name,
             "Processor Manufacturer": processor_info.Manufacturer,
             "Processor Max Clock Speed": f"{processor_info.MaxClockSpeed} MHz",
-            "Number of Cores": processor_info.NumberOfCores,
-            "Number of Logical Processors": processor_info.NumberOfLogicalProcessors
+            "Number of Cores": str( processor_info.NumberOfCores),
+            "Number of Logical Processors": str( processor_info.NumberOfLogicalProcessors)
         }
 
         # Merge dictionaries
@@ -40,8 +40,3 @@ def get_important_system_info():
         print("An error occurred while retrieving system information:", str(e))
         return None
 
-if __name__ == "__main__":
-    system_info = get_important_system_info()
-    if system_info:
-        for key, value in system_info.items():
-            print(f"{key}: {value}")

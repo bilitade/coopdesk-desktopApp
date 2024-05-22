@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1364</width>
-    <height>832</height>
+    <height>834</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -477,7 +477,184 @@ QPushButton:hover {
               <property name="verticalSpacing">
                <number>1</number>
               </property>
-              <item row="0" column="0">
+              <item row="0" column="1">
+               <layout class="QGridLayout" name="ethernet_layout">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>8</number>
+                </property>
+                <item row="8" column="0">
+                 <widget class="QLabel" name="label_91">
+                  <property name="text">
+                   <string>Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_81">
+                  <property name="text">
+                   <string>Subnet mask:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QLabel" name="ethernet_alternative_DNS_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_79">
+                  <property name="text">
+                   <string>IP Address:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="1">
+                 <widget class="QLabel" name="ethernet_mac_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_83">
+                  <property name="text">
+                   <string>Default Gateway :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QLabel" name="ethernet_Deafult_DNS">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="1">
+                 <widget class="QLabel" name="ethernet_speed_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_77">
+                  <property name="text">
+                   <string>Adapter:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="1">
+                 <widget class="QLabel" name="ethernet_status">
+                  <property name="text">
+                   <string>Disconnected</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_87">
+                  <property name="text">
+                   <string>Alternative DNS:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QLabel" name="ethernet_defaultGateway_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLabel" name="ethernet_adapter_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QLabel" name="ethernet_subnet_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLabel" name="ethernet_ip_label">
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0" colspan="2">
+                 <widget class="QLabel" name="label_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(2, 193, 254);</string>
+                  </property>
+                  <property name="text">
+                   <string>Ethernet IP info</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="0">
+                 <widget class="QLabel" name="label_102">
+                  <property name="text">
+                   <string>Network Status </string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_85">
+                  <property name="text">
+                   <string>Default DNS:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QLabel" name="label_89">
+                  <property name="text">
+                   <string>MAC  Address:</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
                <layout class="QGridLayout" name="wifi_layout">
                 <property name="leftMargin">
                  <number>10</number>
@@ -498,9 +675,9 @@ QPushButton:hover {
                  <number>6</number>
                 </property>
                 <item row="2" column="1">
-                 <widget class="QLabel" name="label_8">
+                 <widget class="QLabel" name="wifi_ip_label">
                   <property name="text">
-                   <string>10.1.15.7</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -526,9 +703,9 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item row="5" column="1">
-                 <widget class="QLabel" name="label_38">
+                 <widget class="QLabel" name="wifi_default_dns_label">
                   <property name="text">
-                   <string>10.1.70.10</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -547,16 +724,16 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item row="8" column="1">
-                 <widget class="QLabel" name="label_53">
+                 <widget class="QLabel" name="wifi_speed_label">
                   <property name="text">
-                   <string>100Mbps</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="1">
-                 <widget class="QLabel" name="label_10">
+                 <widget class="QLabel" name="wifi_subnet_label">
                   <property name="text">
-                   <string>255.255.255.0</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -568,23 +745,23 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QLabel" name="label_14">
+                 <widget class="QLabel" name="wifi_adapter_label">
                   <property name="text">
-                   <string>Ethernet 3</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="7" column="1">
-                 <widget class="QLabel" name="label_51">
+                 <widget class="QLabel" name="wifi_MAC_label">
                   <property name="text">
-                   <string>W3HR5YR5RY6FC4B4</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="1">
-                 <widget class="QLabel" name="label_12">
+                 <widget class="QLabel" name="wifi_defaultGate_label">
                   <property name="text">
-                   <string>10.1.15.1</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -622,9 +799,9 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="6" column="1">
-                 <widget class="QLabel" name="label_40">
+                 <widget class="QLabel" name="wifi_alternat_DNS_label">
                   <property name="text">
-                   <string>4.4.2.2</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -643,193 +820,16 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="9" column="0">
-                 <widget class="QLabel" name="label_100">
+                 <widget class="QLabel" name="label_1256">
                   <property name="text">
                    <string>Network Status </string>
                   </property>
                  </widget>
                 </item>
                 <item row="9" column="1">
-                 <widget class="QLabel" name="label_101">
-                  <property name="text">
-                   <string>Connected</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item row="0" column="1">
-               <layout class="QGridLayout" name="ethernet_layout">
-                <property name="leftMargin">
-                 <number>10</number>
-                </property>
-                <property name="topMargin">
-                 <number>10</number>
-                </property>
-                <property name="rightMargin">
-                 <number>10</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>10</number>
-                </property>
-                <property name="horizontalSpacing">
-                 <number>8</number>
-                </property>
-                <item row="6" column="1">
-                 <widget class="QLabel" name="label_88">
-                  <property name="text">
-                   <string>4.4.2.2</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QLabel" name="label_80">
-                  <property name="text">
-                   <string>10.1.15.7</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="8" column="1">
-                 <widget class="QLabel" name="label_92">
-                  <property name="text">
-                   <string>100Mbps</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0" colspan="2">
-                 <widget class="QLabel" name="label_5">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>-1</pointsize>
-                    <bold>true</bold>
-                   </font>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(2, 193, 254);</string>
-                  </property>
-                  <property name="text">
-                   <string>Ethernet IP info</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignmentFlag::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="QLabel" name="label_81">
-                  <property name="text">
-                   <string>Subnet mask:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="1">
-                 <widget class="QLabel" name="label_84">
-                  <property name="text">
-                   <string>10.1.15.1</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="8" column="0">
-                 <widget class="QLabel" name="label_91">
-                  <property name="text">
-                   <string>Speed</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="QLabel" name="label_79">
-                  <property name="text">
-                   <string>IP Address:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="5" column="0">
-                 <widget class="QLabel" name="label_85">
-                  <property name="text">
-                   <string>Default DNS:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="6" column="0">
-                 <widget class="QLabel" name="label_87">
-                  <property name="text">
-                   <string>Alternative DNS:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="1">
-                 <widget class="QLabel" name="label_82">
-                  <property name="text">
-                   <string>255.255.255.0</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="5" column="1">
-                 <widget class="QLabel" name="label_86">
-                  <property name="text">
-                   <string>10.1.70.10</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QLabel" name="label_78">
-                  <property name="text">
-                   <string>Ethernet 3</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="4" column="0">
-                 <widget class="QLabel" name="label_83">
-                  <property name="text">
-                   <string>Default Gateway :</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="7" column="1">
-                 <widget class="QLabel" name="label_90">
-                  <property name="text">
-                   <string>W3HR5YR5RY6FC4B4</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="7" column="0">
-                 <widget class="QLabel" name="label_89">
-                  <property name="text">
-                   <string>MAC  Address:</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="9" column="0">
-                 <widget class="QLabel" name="label_102">
-                  <property name="text">
-                   <string>Network Status </string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="9" column="1">
-                 <widget class="QLabel" name="label_103">
+                 <widget class="QLabel" name="wifi_status_label">
                   <property name="text">
                    <string>Disconnected</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QLabel" name="label_77">
-                  <property name="text">
-                   <string>Adapter:</string>
                   </property>
                  </widget>
                 </item>
@@ -886,9 +886,9 @@ background-color: rgb(2, 193, 254);</string>
                  <number>6</number>
                 </property>
                 <item row="6" column="1">
-                 <widget class="QLabel" name="label_108">
+                 <widget class="QLabel" name="disk_type">
                   <property name="text">
-                   <string>Fixed hard disk media</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -914,9 +914,9 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QLabel" name="label_104">
+                 <widget class="QLabel" name="disk_desc">
                   <property name="text">
-                   <string>Disk drive</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -928,16 +928,16 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="7" column="1">
-                 <widget class="QLabel" name="label_109">
+                 <widget class="QLabel" name="disk_byte_sector">
                   <property name="text">
-                   <string>512</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="1">
-                 <widget class="QLabel" name="label_105">
+                 <widget class="QLabel" name="disk_model">
                   <property name="text">
-                   <string>SAMSUNG MZVLQ512HBLU-00B00</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -956,23 +956,23 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QLabel" name="label_19">
+                 <widget class="QLabel" name="disk_manu">
                   <property name="text">
-                   <string>(Standard disk drives)</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="5" column="1">
-                 <widget class="QLabel" name="label_107">
+                 <widget class="QLabel" name="disk_part">
                   <property name="text">
-                   <string>5</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="1">
-                 <widget class="QLabel" name="label_106">
+                 <widget class="QLabel" name="disk_size">
                   <property name="text">
-                   <string>476.94 GB (512105932800 bytes)</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1035,9 +1035,9 @@ background-color: rgb(2, 193, 254);</string>
                  <number>8</number>
                 </property>
                 <item row="6" column="1">
-                 <widget class="QLabel" name="label_98">
+                 <widget class="QLabel" name="display_resolution">
                   <property name="text">
-                   <string>2160 x 1440 x 60 hertz</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1095,16 +1095,16 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="7" column="1">
-                 <widget class="QLabel" name="label_99">
+                 <widget class="QLabel" name="display_bit_pixel">
                   <property name="text">
-                   <string>32</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QLabel" name="label_45">
+                 <widget class="QLabel" name="display_type">
                   <property name="text">
-                   <string>Intel Corporation</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1116,9 +1116,9 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QLabel" name="label_49">
+                 <widget class="QLabel" name="display_name">
                   <property name="text">
-                   <string>Intel(R) Iris(R) Xe Graphics</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1130,23 +1130,23 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="5" column="1">
-                 <widget class="QLabel" name="label_97">
+                 <widget class="QLabel" name="display_driver_version">
                   <property name="text">
-                   <string>31.0.101.1999</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="1">
-                 <widget class="QLabel" name="label_47">
+                 <widget class="QLabel" name="display_desc">
                   <property name="text">
-                   <string>Intel(R) Iris(R) Xe Graphics</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="1">
-                 <widget class="QLabel" name="label_50">
+                 <widget class="QLabel" name="display_ram">
                   <property name="text">
-                   <string>1.00 GB (1073741824 bytes)</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1254,16 +1254,16 @@ QPushButton:hover {
                  <number>10</number>
                 </property>
                 <item row="2" column="1">
-                 <widget class="QLabel" name="label_26">
+                 <widget class="QLabel" name="sysprocessor_manu">
                   <property name="text">
-                   <string>GenuineIntel</string>
+                   <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QLabel" name="label_32">
+                 <widget class="QLabel" name="sys_processor_name">
                   <property name="text">
-                   <string>11th Gen Intel(R) Core(TM) i5-11320H @ 3.20GHz</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1282,9 +1282,9 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item row="3" column="1">
-                 <widget class="QLabel" name="label_28">
+                 <widget class="QLabel" name="sys_processor_max_clock">
                   <property name="text">
-                   <string>3187 MHz</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1303,51 +1303,51 @@ QPushButton:hover {
                  </widget>
                 </item>
                 <item row="13" column="1">
-                 <widget class="QLabel" name="label_123">
+                 <widget class="QLabel" name="sys_ram">
                   <property name="text">
-                   <string>7.79 GB</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="9" column="0">
-                 <widget class="QLabel" name="label_111">
+                 <widget class="QLabel" name="label7869">
                   <property name="text">
                    <string>System Type</string>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="1">
-                 <widget class="QLabel" name="label_117">
+                 <widget class="QLabel" name="sys_processor_num_core">
                   <property name="text">
-                   <string>4</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="5" column="0">
-                 <widget class="QLabel" name="label_29">
+                 <widget class="QLabel" name="label7865">
                   <property name="text">
                    <string>Number of Logical Processors</string>
                   </property>
                  </widget>
                 </item>
                 <item row="6" column="0">
-                 <widget class="QLabel" name="label_17">
+                 <widget class="QLabel" name="label46547">
                   <property name="text">
                    <string>System Name</string>
                   </property>
                  </widget>
                 </item>
                 <item row="9" column="1">
-                 <widget class="QLabel" name="label_110">
+                 <widget class="QLabel" name="sys_system_type">
                   <property name="text">
-                   <string>x64-based PC</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="5" column="1">
-                 <widget class="QLabel" name="label_30">
+                 <widget class="QLabel" name="sys_processor_logical_num_core">
                   <property name="text">
-                   <string>8</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1391,16 +1391,16 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="10" column="1">
-                 <widget class="QLabel" name="label_120">
+                 <widget class="QLabel" name="sys_os_name">
                   <property name="text">
-                   <string>Microsoft Windows 11 Pro</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="11" column="1">
-                 <widget class="QLabel" name="label_121">
+                 <widget class="QLabel" name="sys_os_version">
                   <property name="text">
-                   <string>10.0.22631</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1412,9 +1412,9 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="12" column="1">
-                 <widget class="QLabel" name="label_122">
+                 <widget class="QLabel" name="sys_os_manu">
                   <property name="text">
-                   <string>Microsoft Corporation</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1426,44 +1426,44 @@ background-color: rgb(2, 193, 254);</string>
                  </widget>
                 </item>
                 <item row="8" column="0">
-                 <widget class="QLabel" name="label_35">
+                 <widget class="QLabel" name="label5743">
                   <property name="text">
                    <string>System Model</string>
                   </property>
                  </widget>
                 </item>
                 <item row="7" column="1">
-                 <widget class="QLabel" name="label_119">
+                 <widget class="QLabel" name="sys_system_manu">
                   <property name="text">
-                   <string>realme</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="7" column="0">
-                 <widget class="QLabel" name="label_118">
+                 <widget class="QLabel" name="label6854">
                   <property name="text">
                    <string>System Manufacturer&quot;</string>
                   </property>
                  </widget>
                 </item>
                 <item row="8" column="1">
-                 <widget class="QLabel" name="label_36">
+                 <widget class="QLabel" name="sys_system_model">
                   <property name="text">
-                   <string>CloudProXXXX</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="0">
-                 <widget class="QLabel" name="label_116">
+                 <widget class="QLabel" name="pic42524">
                   <property name="text">
                    <string>Number of Cores</string>
                   </property>
                  </widget>
                 </item>
                 <item row="6" column="1">
-                 <widget class="QLabel" name="label_34">
+                 <widget class="QLabel" name="sys_system_name">
                   <property name="text">
-                   <string>DIG-BLP-10</string>
+                   <string>-</string>
                   </property>
                  </widget>
                 </item>
@@ -1471,75 +1471,34 @@ background-color: rgb(2, 193, 254);</string>
               </item>
               <item row="1" column="0">
                <layout class="QGridLayout" name="perfomrncelgrdlayout_2">
-                <item row="0" column="1">
-                 <widget class="QLabel" name="label_125">
-                  <property name="text">
-                   <string>3.1gHz (3.2%)</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignmentFlag::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="2">
-                 <widget class="QWidget" name="widget_4" native="true">
-                  <property name="minimumSize">
-                   <size>
-                    <width>32</width>
-                    <height>32</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>64</width>
-                    <height>64</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(19, 255, 204);
-border-radius:5px;</string>
-                  </property>
-                 </widget>
-                </item>
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>10</number>
+                </property>
+                <property name="rightMargin">
+                 <number>10</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>10</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>10</number>
+                </property>
+                <property name="verticalSpacing">
+                 <number>8</number>
+                </property>
                 <item row="1" column="2">
-                 <widget class="QWidget" name="widget_5" native="true">
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 255, 0);</string>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_127">
-                  <property name="minimumSize">
-                   <size>
-                    <width>32</width>
-                    <height>32</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>64</width>
-                    <height>64</height>
-                   </size>
-                  </property>
+                 <widget class="QLabel" name="cpu_ram_free_used_ratio">
                   <property name="text">
-                   <string/>
-                  </property>
-                  <property name="pixmap">
-                   <pixmap resource="resource.qrc">:/perfomance_icons/cpu_icon.png</pixmap>
-                  </property>
-                  <property name="scaledContents">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <widget class="QLabel" name="label_126">
-                  <property name="text">
-                   <string>0.04%</string>
+                   <string>Loading...</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                  </property>
+                  <property name="margin">
+                   <number>10</number>
                   </property>
                  </widget>
                 </item>
@@ -1571,25 +1530,40 @@ border-radius:5px;</string>
                   </property>
                  </widget>
                 </item>
-                <item row="2" column="2">
-                 <widget class="QWidget" name="widget_6" native="true">
-                  <property name="styleSheet">
-                   <string notr="true">background-color: rgb(255, 85, 0);</string>
+                <item row="0" column="1">
+                 <widget class="QProgressBar" name="cpu_progress_bar">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <bold>false</bold>
+                   </font>
                   </property>
-                 </widget>
-                </item>
-                <item row="1" column="1">
-                 <widget class="QLabel" name="label_129">
-                  <property name="text">
-                   <string>6.7/8 GB (90%)</string>
+                  <property name="styleSheet">
+                   <string notr="true">QProgressBar {
+    background-color: #C0C0C0; /* Background color */
+    border: 2px solid grey; /* Border color */
+    border-radius: 5px; /* Border radius */
+
+    
+}
+
+QProgressBar::chunk {
+    background-color: #00ADEF; /* Progress color */
+}</string>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignmentFlag::AlignCenter</set>
                   </property>
+                  <property name="invertedAppearance">
+                   <bool>false</bool>
+                  </property>
                  </widget>
                 </item>
-                <item row="2" column="0">
-                 <widget class="QLabel" name="label_128">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label65746">
                   <property name="minimumSize">
                    <size>
                     <width>32</width>
@@ -1606,10 +1580,50 @@ border-radius:5px;</string>
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="resource.qrc">:/perfomance_icons/ssd_icon.png</pixmap>
+                   <pixmap resource="resource.qrc">:/perfomance_icons/cpu_icon.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QProgressBar" name="ram_progressbar">
+                  <property name="font">
+                   <font>
+                    <pointsize>12</pointsize>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QProgressBar {
+    background-color: #C0C0C0; /* Background color */
+    border: 2px solid grey; /* Border color */
+    border-radius: 5px; /* Border radius */
+}
+
+QProgressBar::chunk {
+    background-color: #00ADEF; /* Progress color */
+}</string>
+                  </property>
+                  <property name="value">
+                   <number>0</number>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignmentFlag::AlignCenter</set>
+                  </property>
+                  <property name="textDirection">
+                   <enum>QProgressBar::Direction::TopToBottom</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="cpu_frequency_label">
+                  <property name="text">
+                   <string>Loading...</string>
+                  </property>
+                  <property name="margin">
+                   <number>10</number>
                   </property>
                  </widget>
                 </item>
