@@ -29,6 +29,8 @@ class CoopDeskWidget(QMainWindow, Ui_MainWindow):
         self.setup_disk_thread()
         self.setup_display_thread()
         self.setup_wifi_thread()
+        self.michu_Next.clicked.connect(self.show_michu_next)
+        self.michu_Previous.clicked.connect(self.show_michu_previous)
 
 
     def setup_connections(self):
@@ -224,3 +226,16 @@ class CoopDeskWidget(QMainWindow, Ui_MainWindow):
         self.cpu_info_thread.stop()
         self.cpu_info_thread.wait()
         super().closeEvent(event)
+
+
+    def show_michu_previous(self):
+        current_index = self.michu_slider.currentIndex()
+
+        if current_index > 0:
+            self.michu_slider.setCurrentIndex(current_index - 1)
+
+    def show_michu_next(self):
+        current_index = self.michu_slider.currentIndex()
+        if current_index < self.michu_slider.count() - 1:
+            self.michu_slider.setCurrentIndex(current_index + 1)
+

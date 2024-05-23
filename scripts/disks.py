@@ -21,4 +21,4 @@ def get_primary_disk_info():
     except Exception as e:
         print("An error occurred while retrieving disk information:", str(e))
         return None
-
+print(get_primary_disk_info())

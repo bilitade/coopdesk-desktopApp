@@ -19,6 +19,19 @@
     <file>images/update_icon_blue.svg</file>
     <file>images/update_icon_light.svg</file>
   </qresource>
+  <qresource prefix="michusliders">
+    <file>michu_slide/Slide1.PNG</file>
+    <file>michu_slide/Slide2.PNG</file>
+    <file>michu_slide/Slide3.PNG</file>
+    <file>michu_slide/Slide4.PNG</file>
+    <file>michu_slide/Slide5.PNG</file>
+    <file>michu_slide/Slide6.PNG</file>
+    <file>michu_slide/Slide7.PNG</file>
+    <file>michu_slide/Slide8.PNG</file>
+    <file>michu_slide/Slide9.PNG</file>
+    <file>michu_slide/Slide10.PNG</file>
+    <file>michu_slide/Slide11.PNG</file>
+  </qresource>
   <qresource>
     <file>perfomance_icons/cpu_icon.png</file>
     <file>perfomance_icons/ram_icon.png</file>
